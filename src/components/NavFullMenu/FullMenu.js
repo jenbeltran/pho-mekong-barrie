@@ -1,11 +1,18 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { Menu, Sidebar } from 'semantic-ui-react';
 
 const SidebarMenuVisible = () => (
-	<Sidebar as={Menu} animation="overlay" icon="labeled" inverted vertical visible width="thin">
-		<Menu.Item as="a">Pho Mekong</Menu.Item>
-		<Menu.Item as="a">Popular Items</Menu.Item>
-		<Menu.Item as="a">Full Menu</Menu.Item>
+	<Sidebar as={Menu} animation="push" icon="labeled" inverted vertical visible>
+		<Menu.Item as="a">
+			<Link href="/">Pho Mekong</Link>
+		</Menu.Item>
+		<Menu.Item as="a">
+			<Link href="/menu">Popular Items</Link>
+		</Menu.Item>
+		<Menu.Item as="a">
+			<Link href="/menu">Full Menu</Link>
+		</Menu.Item>
 		<Menu.Item as="a">Pho</Menu.Item>
 		<Menu.Item as="a">Pad Thai</Menu.Item>
 		<Menu.Item as="a">Vermicelli</Menu.Item>
@@ -20,7 +27,9 @@ const SidebarMenuVisible = () => (
 		<Menu.Item as="a">Curry</Menu.Item>
 		<Menu.Item as="a">Salads</Menu.Item>
 		<Menu.Item as="a">Beverages</Menu.Item>
-		<Menu.Item as="a">Contact Us</Menu.Item>
+		<Menu.Item as="a">
+			<Link href="/">Contact Us</Link>
+		</Menu.Item>
 	</Sidebar>
 );
 
