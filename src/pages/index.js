@@ -1,13 +1,14 @@
 import React from 'react';
 import SEO from '../components/seo';
 import NavFullMenu from '../components/NavFullMenu/FullMenu.js';
+import Landing from '../components/LandingPage/Landing.js';
 
 const IndexPage = () => {
 	return (
 		<div>
 			<SEO title="Home" />
 			<NavFullMenu />
-			<h1>testihhhhhhhhhhhhhhhhhhhhng</h1>
+			<Landing />
 		</div>
 	);
 };
