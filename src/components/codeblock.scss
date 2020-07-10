@@ -1,0 +1,17 @@
+.ui.codeblock {
+    margin: 2rem 0 3rem 0;
+}
+
+.ui.codeblock .html.segment {
+    padding-top: 3em !important;
+}
+
+.ui.codeblock .html.segment>.attached.label .clipboard {
+    float: right;
+}
+
+.ui.codeblock .html.segment>.attached.label button {
+    border: 0;
+    background: transparent;
+    float: right;
+}
