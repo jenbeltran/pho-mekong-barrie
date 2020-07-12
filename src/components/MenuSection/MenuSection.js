@@ -5,11 +5,11 @@ import MenuItem from '../MenuItem/MenuItem.js';
 
 // TODO: install uuid for unique key
 // retreives all menu items from a category, props
-const Header = styled.header`
+const Header = styled.h4`
 	padding: 1em 1em 0em 1em
 `
 const Paragraph = styled.p`
-	padding: 0em 1em
+	padding: 0em 1.5em
 `
 
 const MenuSection = (props) => {
@@ -21,8 +21,8 @@ const MenuSection = (props) => {
 
 	return (
 		<ListGroup>
-			<h5 style={{ padding: '1em 1em 0em 1em' }}>{header}</h5>
-			<p style={{ padding: '0em 1em 0em 1em' }}>{desc}</p>
+			<Header>{header}</Header>
+			<Paragraph>{desc}</Paragraph>
 			{allCategoryItems}
 		</ListGroup>
 	);
