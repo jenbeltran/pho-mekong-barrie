@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardText, CardBody, CardTitle, Button, ButtonGroup } from 'reactstrap';
 
+// This component is currently not being used but once all menu photos are obtained, the menu will use this component which has an img element
 const MenuCard = (props) => {
 	return (
 		<Card style={{ width: '30%', margin: '1em' }}>
