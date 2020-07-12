@@ -1,7 +1,8 @@
 import React from 'react';
-import PhoBanner from '../images/test-banner-pho.jpeg';
+import PhoBanner from '../../images/test-banner-pho.jpeg';
 import styled from 'styled-components';
 
+// TODO: Pass the src as props to styled component, it is currently hardcoded
 const BannerImg = styled.img.attrs({
   src: PhoBanner,
   alt: 'banner'
@@ -16,8 +17,7 @@ const BannerImg = styled.img.attrs({
 const Banner = () => {
   
   return(
-    <img src={PhoBanner} alt="banner" style={{objectFit: 'none',
-      height: '16em', width: '100%', objectPosition: '75% 40%', filter: 'brightness(0.8) opacity(0.6)'}}></img>
+    <BannerImg />
   )
 }
 
