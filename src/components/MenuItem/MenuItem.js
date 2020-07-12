@@ -1,8 +1,33 @@
 import React from 'react';
 import { ListGroupItem } from 'reactstrap';
+import styled from 'styled-components';
+import { Item } from 'semantic-ui-react';
 
-const MenuItem = (props) => {
-	const { code, name, price, desc, subOptions } = props.item;
+// TOD0: Refactor
+
+const PhoSizeOptions = styled.ul`
+	padding: inherit;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	width: 40%;
+` 
+const SubOptions = styled.ul`
+	padding: initial;
+	display: flex; 
+	list-style: none; 
+	justify-content: space-between;
+`
+
+const AllItemInfo = styled.section.attrs({
+	className: 'item-name-with-code-price'
+})`
+	display: flex;
+	justify-content: space-between;
+`
+
+const MenuItem = ({item, header}) => {
+	const { code, name, price, desc, subOptions } = item;
 
 	// If the item has sub options. Fresh salad rolls(A5) has 4 types
 	const getAllSubOptions = (allOptions) => {
@@ -13,32 +38,25 @@ const MenuItem = (props) => {
 
 	return (
 		<ListGroupItem key={code}>
-			<section className="main" style={{ display: 'flex', justifyContent: 'space-between' }}>
-				<section className="item">
+			<AllItemInfo>
+				<section className="item-name-and-code">
 					{code}. {name}
 				</section>
-				{props.header !== 'Pho' && <section className="price">{(price / 100).toFixed(2)}</section>}
-				{props.header === 'Pho' &&
+				{header !== 'Pho' && <section className="price">{(price / 100).toFixed(2)}</section>}
+				{header === 'Pho' &&
 				subOptions && (
-					<ul
-						style={{
-							padding: 'initial',
-							display: 'flex',
-							listStyle: 'none',
-							justifyContent: 'space-between',
-							width: '50%'
-						}}
-					>
-						{getAllSubOptions(subOptions)}
-					</ul>
+					<PhoSizeOptions>
+							{getAllSubOptions(subOptions)}
+					</PhoSizeOptions>
 				)}
-			</section>
+			</AllItemInfo>
 			{desc && <article className="description">{desc}</article>}
 			{subOptions &&
-			props.header !== 'Pho' && (
-				<ul style={{ padding: 'initial', display: 'flex', listStyle: 'none', justifyContent: 'space-between' }}>
+			header !== 'Pho' && (
+				<SubOptions>
 					{getAllSubOptions(subOptions)}
-				</ul>
+				</SubOptions>
+
 			)}
 		</ListGroupItem>
 	);
