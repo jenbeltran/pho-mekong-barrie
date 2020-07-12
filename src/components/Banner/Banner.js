@@ -3,6 +3,7 @@ import PhoBanner from '../../images/test-banner-pho.jpeg';
 import styled from 'styled-components';
 
 // TODO: Pass the src as props to styled component, it is currently hardcoded
+// Separate styled comp to a diff file
 const BannerImg = styled.img.attrs({
   src: PhoBanner,
   alt: 'banner'
