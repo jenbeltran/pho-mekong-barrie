@@ -86,9 +86,9 @@ const data = [
 			{ code: 'H1', name: 'Spicy Huế beef vermicelli soup (Bún bò Huế)', price: 1145 },
 			{ code: 'H3', name: 'Wonton and pork egg noodle soup', price: 1145 },
 			{ code: 'H4', name: 'Wonton and pork rice noodle soup', price: 1145 },
-			{ code: 'H5', name: 'Seafood egg noodle soup', price: 1145 },
-			{ code: 'H6', name: 'Seafood rice noodle soup', price: 1145 },
-			{ code: 'H7', name: 'Special egg noodle soup (shrimp, wontons, chicken and pork)', price: 1145 }
+			{ code: 'H5', name: 'Seafood egg noodle soup', price: 1245 },
+			{ code: 'H6', name: 'Seafood rice noodle soup', price: 1245 },
+			{ code: 'H7', name: 'Special egg noodle soup (shrimp, wontons, chicken and pork)', price: 1245 }
 		]
 	},
 	{
@@ -97,7 +97,7 @@ const data = [
 			{ code: 'R1', name: 'Rice with grilled lemongrass porkchop', price: 1145 },
 			{ code: 'R2', name: 'Rice with grilled lemongrass chicken', price: 1145 },
 			{ code: 'R3', name: 'Rice with grilled beef', price: 1145 },
-			{ code: 'R4', name: 'Rice with grilled lemongrass chicken & porkchop', price: 1345 },
+			{ code: 'R4', name: 'Rice with grilled lemongrass chicken & porkchop', price: 1395 },
 			{ code: 'R5', name: 'Stir fry chicken with satay', price: 1195 },
 			{ code: 'R6', name: 'Stir fry beef with satay', price: 1195 },
 			{ code: 'R6', name: 'Stir fry chicken with cashews', price: 1195 },
@@ -143,9 +143,9 @@ const data = [
 		list   : [
 			{ code: 'C1', name: 'Chicken congee', price: 895 },
 			{ code: 'C2', name: 'Pork congee', price: 895 },
-			{ code: 'C3', name: 'Shrimp congee', price: 995 },
-			{ code: 'C4', name: 'Assorted (pork, beef, shrimp, chicken) congee', price: 995 },
-			{ code: 'C5', name: 'Seafood (imitation crab, fish balls, scallop, mussell, shrimp) congee', price: 995 }
+			{ code: 'C3', name: 'Shrimp congee', price: 1095 },
+			{ code: 'C4', name: 'Assorted (pork, beef, shrimp, chicken) congee', price: 1095 },
+			{ code: 'C5', name: 'Seafood (imitation crab, fish balls, scallop, mussell, shrimp) congee', price: 1095 }
 		]
 	},
 	{
@@ -175,14 +175,14 @@ const data = [
 			'An egg noodle stir-fry dish, choose between SOFT or CRISPY noodles. All stir-fry dishes contain onions, cabbage and carrots.',
 		list   : [
 			{ code: 'M1', name: 'Vegetable Stir-fry', price: 1145 },
-			{ code: 'M2', name: 'Chicken Stir-fry', price: 1145 },
-			{ code: 'M3', name: 'Beef Stir-fry', price: 1145 },
-			{ code: 'M4', name: 'Chicken satay Stir-fry', price: 1145 },
-			{ code: 'M5', name: 'Beef satay Stir-fry', price: 1145 },
-			{ code: 'M6', name: 'Shrimp Stir-fry', price: 1145 },
-			{ code: 'M7', name: 'Shrimp satay Stir-fry', price: 1145 },
-			{ code: 'M8', name: 'Seafood Stir-fry', price: 1145 },
-			{ code: 'M8', name: 'Combination (shrimp, pork, beef) Stir-fry', price: 1145 }
+			{ code: 'M2', name: 'Chicken Stir-fry', price: 1245 },
+			{ code: 'M3', name: 'Beef Stir-fry', price: 1245 },
+			{ code: 'M4', name: 'Chicken satay Stir-fry', price: 1245 },
+			{ code: 'M5', name: 'Beef satay Stir-fry', price: 1245 },
+			{ code: 'M6', name: 'Shrimp Stir-fry', price: 1445 },
+			{ code: 'M7', name: 'Shrimp satay Stir-fry', price: 1445 },
+			{ code: 'M8', name: 'Seafood Stir-fry', price: 1445 },
+			{ code: 'M8', name: 'Combination (shrimp, pork, beef) Stir-fry', price: 1445 }
 		]
 	},
 	{
