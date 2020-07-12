@@ -29,7 +29,7 @@ const AllItemInfo = styled.section.attrs({
 const MenuItem = ({item, header}) => {
 	const { code, name, price, desc, subOptions } = item;
 
-	// If the item has sub options. Fresh salad rolls(A5) has 4 types
+	// Only A5 and Pho items have supoptions
 	const getAllSubOptions = (allOptions) => {
 		return allOptions.map((option) => {
 			return <li>{option}</li>;
