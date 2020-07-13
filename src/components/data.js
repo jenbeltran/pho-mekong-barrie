@@ -31,7 +31,7 @@ const data = [
 		]
 	},
 	{
-		header : 'Soups',
+		header : 'Small Soups',
 		desc   :
 			'These are appetizer soups, there are no noodles. All soup bases are bone bone based. We do not have vegetarian broth.',
 		list   : [
