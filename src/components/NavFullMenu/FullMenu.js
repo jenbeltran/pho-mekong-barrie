@@ -1,14 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import { Menu, Sidebar } from 'semantic-ui-react';
 
-const SidebarMenuVisible = () => {
-
-	const [activeItem, setActiveItem] = useState('fullMenu');
+const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 
 	const handleItemClick = (evt, {name}) => {
 		setActiveItem(name);
-		console.log('it works')
 	};
 
 	return (

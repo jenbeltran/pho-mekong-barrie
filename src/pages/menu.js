@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SEO from '../components/seo';
 import NavFullMenu from '../components/NavFullMenu/FullMenu.js';
 import MenuSection from '../components/MenuSection/MenuSection.js';
@@ -33,6 +33,9 @@ const MenuContent = styled.section`
 `
 
 const MenuPage = () => {
+
+	const [activeItem, setActiveItem] = useState('fullMenu');
+
 	const allMenuItems = data.map((section) => {
 		return <MenuSection section={section} />;
 	});
@@ -40,7 +43,7 @@ const MenuPage = () => {
 	return (
 		<div>
 			<SEO title="Home" />
-			<NavFullMenu />
+			<NavFullMenu activeItem={activeItem} setActiveItem={setActiveItem}/>
 			<section>
 				<Banner />
 				<BannerSection>
