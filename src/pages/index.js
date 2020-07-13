@@ -1,13 +1,14 @@
 import React from 'react';
 import SEO from '../components/seo';
-import NavFullMenu from '../components/NavFullMenu/FullMenu.js';
+import NavDesktop from '../components/NavDesktop/NavDesktop.js';
+import NavMobile from '../components/NavMobile/index';
 import Landing from '../components/LandingPage/Landing';
 
 const IndexPage = () => {
 	return (
 		<div>
 			<SEO title="Home" />
-			{/* <NavFullMenu /> */}
+			<NavDesktop />
 			<Landing />
 		</div>
 	);
