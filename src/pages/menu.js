@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import SEO from '../components/seo';
 import NavFullMenu from '../components/NavFullMenu/FullMenu.js';
 import MenuSection from '../components/MenuSection/MenuSection.js';
+import MenuItem from '../components/MenuItem/MenuItem.js';
 import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
 import data from '../components/data';
-
 
 // TODO: Move styled components to a separate file
 // Currently the BannerHeader and Desc are hardcoded, make this take props to make it reusable
@@ -35,11 +35,23 @@ const MenuContent = styled.section`
 const MenuPage = () => {
 
 	const [activeItem, setActiveItem] = useState('fullMenu');
+	
+	// Create a function which filters the menu data depending ont the state of active item
 
-	const allMenuItems = data.map((section) => {
-		return <MenuSection section={section} />;
-	});
+	// Logic which updates menu content depending on the state of the Navmenu
+	let fitlered;
 
+	if(activeItem === 'fullMenu') {
+		fitlered = data;
+	} else {
+		fitlered = data.filter(section => (section.header === activeItem));
+	}
+
+	const MenuItems = fitlered.map((section) => (
+		<MenuSection section={section} />
+	));
+
+	console.log('activeItem: ', activeItem)
 	return (
 		<div>
 			<SEO title="Home" />
@@ -54,7 +66,7 @@ const MenuPage = () => {
 				</Desc>
 			</section>
 			<MenuContent>
-				{allMenuItems}
+				{MenuItems}
 			</MenuContent>
 			
 		</div>
