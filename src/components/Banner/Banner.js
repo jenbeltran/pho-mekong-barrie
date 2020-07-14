@@ -10,7 +10,7 @@ const BannerImg = styled.img.attrs({
 })`
   object-fit: none;
   height: 16em;
-  width: 100%;
+  width: 101%;
   object-position: 75% 40%;
   filter: brightness(0.8) opacity(0.6);
 `
