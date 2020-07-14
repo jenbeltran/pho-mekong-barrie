@@ -4,6 +4,7 @@ import NavFullMenu from '../components/NavFullMenu/FullMenu.js';
 import Landing from '../components/LandingPage/Landing';
 
 const IndexPage = () => {
+
 	return (
 		<div>
 			<SEO title="Home" />
