@@ -5,7 +5,7 @@ import { BannerHeader, BannerImg, BannerSection, Desc } from './Banner.css.js'
 // Currently the BannerHeader and Desc are hardcoded, make this take props to make it reusable
 
 // This commponent is the top section of the content
-const Banner = () => {
+const Banner = ({activeItem}) => {
   
   return(
     <section>
