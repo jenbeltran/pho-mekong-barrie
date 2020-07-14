@@ -1,56 +1,44 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
 import SEO from '../components/seo';
+import NavFullMenu from '../components/NavFullMenu/FullMenu.js';
 import MenuSection from '../components/MenuSection/MenuSection.js';
+import MenuItem from '../components/MenuItem/MenuItem.js';
 import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
 import data from '../components/data';
-import NavDesktop from '../components/NavDesktop/NavDesktop.js';
+import Landing from '../components/LandingPage/Landing';
 
 // TODO: Move styled components to a separate file
-// Currently the BannerHeader and Desc are hardcoded, make this take props to make it reusable
-const BannerSection = styled.div.attrs({
-	className : 'pusher'
-})`
-	display: flex;
-	justify-content: center;
-`;
-const BannerHeader = styled.h1`
-	position: absolute;
-	top: 4em;
-	transform: translateX(3em);
-`;
-
-const Desc = styled.section`
-	text-align: justify;
-	display: flex;
-	align-items: center;
-	margin: 1em 2em 0 13em;
-`;
 
 const MenuContent = styled.section`margin: 0 1em 0 12em;`;
 
 const MenuPage = () => {
-	const allMenuItems = data.map((section) => {
-		return <MenuSection section={section} />;
-	});
+	const [ activeItem, setActiveItem ] = useState('Pho Mekong');
+
+	// Logic which updates menu content depending on the state of the Navmenu
+	let fitlered;
+
+	if (activeItem === 'Full Menu') {
+		fitlered = data;
+	} else {
+		fitlered = data.filter((section) => section.header === activeItem);
+	}
+
+	const MenuItems = fitlered.map((section) => <MenuSection section={section} />);
 
 	return (
-		<div>
+		<section>
 			<SEO title="Home" />
-			<NavDesktop />
-			<section>
-				<Banner />
-				<BannerSection>
-					<BannerHeader>Pho</BannerHeader>
-				</BannerSection>
-				<Desc>
-					Pho is a popular Vietnamese noodle soup. Beef bones are simmered for many hours in combination with
-					herbs and spices that help to bring out the flavour. It is served with traditional rice noodles and
-					your choice of meat, or vegetables. Topped with green and white onions and black pepper.
-				</Desc>
-			</section>
-			<MenuContent>{allMenuItems}</MenuContent>
-		</div>
+			<NavFullMenu activeItem={activeItem} setActiveItem={setActiveItem} />
+			{activeItem === 'Pho Mekong' ? (
+				<Landing />
+			) : (
+				<Fragment>
+					<Banner />
+					<MenuContent>{MenuItems}</MenuContent>
+				</Fragment>
+			)}
+		</section>
 	);
 };
 

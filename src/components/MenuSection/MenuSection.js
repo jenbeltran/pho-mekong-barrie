@@ -1,17 +1,11 @@
 import React from 'react';
 import { ListGroup } from 'reactstrap';
-import styled from 'styled-components';
+import { Header, Paragraph } from './MenuSection.css.js'
 import MenuItem from '../MenuItem/MenuItem.js';
 
 // TODO: install uuid for unique key
-// retreives all menu items from a category, props
-const Header = styled.h4`
-	padding: 1em 1em 0em 1em
-`
-const Paragraph = styled.p`
-	padding: 0em 1.5em
-`
 
+// retreives data, props, and renders each item, this component sits below its respective Banner component
 const MenuSection = (props) => {
 	const { header, list, desc } = props.section;
 
