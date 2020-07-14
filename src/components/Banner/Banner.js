@@ -4,6 +4,7 @@ import { BannerHeader, BannerImg, BannerSection, Desc } from './Banner.css.js'
 // TODO: Pass the src as props to styled component, it is currently hardcoded
 // Currently the BannerHeader and Desc are hardcoded, make this take props to make it reusable
 
+// This commponent is the top section of the content
 const Banner = () => {
   
   return(
