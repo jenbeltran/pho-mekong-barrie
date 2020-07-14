@@ -17,7 +17,7 @@ const LandingSection = styled.section`
 const Wrapper = styled.div`
 	@media (min-width: 481px) {
 		padding: 5rem 12rem 5rem 5rem;
-		border-left: 5px solid grey;
+		border-left: 5px solid #00999f;
 	}
 
 	@media (max-width: 480px) {
