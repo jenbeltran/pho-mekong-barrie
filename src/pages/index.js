@@ -1,7 +1,7 @@
 import React from 'react';
 import SEO from '../components/seo';
 import NavDesktop from '../components/NavDesktop/NavDesktop.js';
-import NavMobile from '../components/NavMobile/index';
+
 import Landing from '../components/LandingPage/Landing';
 
 const IndexPage = () => {
