@@ -2,11 +2,8 @@ import styled from 'styled-components';
 import PhoBanner from '../../images/test-banner-pho.jpeg';
 import BannerData from './data.js';
 
-// TODO: Pass the src as props to styled component, it is currently hardcoded
-// Currently the BannerHeader and Desc are hardcoded, make this take props to make it reusable
-
 const BannerImg = styled.img.attrs(props => ({
-  src: props.currentImg,
+  src: props.currentImg || PhoBanner,
   alt: 'banner'
 }))`
   object-fit: none;
