@@ -2,7 +2,6 @@ import React, { useState, Fragment } from 'react';
 import SEO from '../components/seo';
 import NavDesktop from '../components/NavDesktop/NavDesktop.js';
 import MenuSection from '../components/MenuSection/MenuSection.js';
-import MenuItem from '../components/MenuItem/MenuItem.js';
 import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
 import data from '../components/data';
