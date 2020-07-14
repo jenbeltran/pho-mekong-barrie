@@ -44,7 +44,10 @@ const Info = styled.p`font-size: 1.3rem;`;
 const RestaurantPhoto = styled.img`
 	@media (min-width: 481px) {
 		height: 35rem;
+		box-shadow: 10px -10px #00999f;
+		border-radius: 5%;
 	}
+
 	@media (max-width: 480px) {
 		width: 100%;
 		height: auto;
