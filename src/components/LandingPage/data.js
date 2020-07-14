@@ -1,4 +1,4 @@
-import restaurant from '../../images/restaurant.jpg';
+import restaurant from '../../images/restaurant.png';
 
 const RestaurantData = {
 	photo      : restaurant,
