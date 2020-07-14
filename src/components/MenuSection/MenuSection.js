@@ -15,7 +15,6 @@ const MenuSection = (props) => {
 
 	return (
 		<ListGroup>
-			<Header>{header}</Header>
 			<Paragraph>{desc}</Paragraph>
 			{allCategoryItems}
 		</ListGroup>

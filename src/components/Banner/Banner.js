@@ -1,22 +1,16 @@
 import React from 'react';
-import { BannerHeader, BannerImg, BannerSection, Desc } from './Banner.css.js'
-
-// TODO: Pass the src as props to styled component, it is currently hardcoded
-// Currently the BannerHeader and Desc are hardcoded, make this take props to make it reusable
+import { BannerHeader, BannerImg, BannerSection } from './Banner.css.js'
+import BannerData from './data.js';
 
 // This commponent is the top section of the content
-const Banner = () => {
+const Banner = ({activeItem}) => {
   
   return(
-    <section>
-      <BannerImg />
+    <section style={{minHeight: '16em'}}>
+      <BannerImg currentImg={BannerData[activeItem].img}/>
       <BannerSection>
-        <BannerHeader>Pho</BannerHeader>
+      <BannerHeader>{activeItem}</BannerHeader>
       </BannerSection>
-      <Desc>
-				Pho is a popular Vietnamese noodle soup. Beef bones are simmered for many hours in combination with herbs and spices that help to bring out the flavour. It is served with traditional rice noodles and your choice of meat, or vegetables. Topped with green and white onions and black pepper.
-				</Desc>
-
     </section>
   )
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ListGroupItem } from 'reactstrap';
-import { Item } from 'semantic-ui-react';
 import { PhoSizeOptions, SubOptions, AllItemInfo } from './MenuItem.css'
 
 // TOD0: Refactor
