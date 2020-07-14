@@ -33,7 +33,7 @@ const MenuPage = () => {
 				<Landing />
 			) : (
 				<Fragment>
-					<Banner />
+					<Banner activeItem={activeItem}/>
 					<MenuContent>{MenuItems}</MenuContent>
 				</Fragment>
 			)}
