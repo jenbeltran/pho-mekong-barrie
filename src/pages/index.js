@@ -7,7 +7,7 @@ const IndexPage = () => {
 	return (
 		<div>
 			<SEO title="Home" />
-			{/* <NavFullMenu /> */}
+			<NavFullMenu />
 			<Landing />
 		</div>
 	);
