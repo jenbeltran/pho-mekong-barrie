@@ -5,17 +5,16 @@ import { Menu, Sidebar } from 'semantic-ui-react';
 const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 
 	const handleItemClick = (evt, {name}) => {
+
 		setActiveItem(name);
 	};
 
 	return (
 		<Sidebar as={Menu} animation="push" icon="labeled" inverted vertical visible>
-			<Menu.Item as="a">
+			<Menu.Item as="a" active={activeItem === 'Pho Mekong'} onClick={handleItemClick}>
 				<Link href="/">Pho Mekong</Link>
 			</Menu.Item>
-			<Menu.Item as="a">
-				<Link href="/menu">Popular Items</Link>
-			</Menu.Item>
+			<Menu.Item as="a" active={activeItem === 'Popular Items'} onClick={handleItemClick}>Popular Items</Menu.Item>
 			<Menu.Item as="a" name="Full Menu" active={activeItem === 'Full Menu'} onClick={handleItemClick}>Full Menu</Menu.Item>
 			<Menu.Item as="a" name="Pho" active={activeItem === 'Pho'} onClick={handleItemClick}>Pho</Menu.Item>
 			<Menu.Item as="a" name="Pad Thai" active={activeItem === 'Pad Thai'} onClick={handleItemClick}>Pad Thai</Menu.Item>
