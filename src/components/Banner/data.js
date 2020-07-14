@@ -1,4 +1,8 @@
 // IMPORT IMGS HERE TO USE
+import Pho from '../../images/test-banner-pho.jpeg';
+import Appetizer from '../../images/appetizer.png';
+import Congee from '../../images/congee.png';
+import NoodleSoup from '../../images/noodle-soup.png';
 
 const BannerData = {
   'Full Menu': {
@@ -14,7 +18,7 @@ const BannerData = {
   'Pho': {
     title: 'Pho',
     desc: 'Lorem',
-    img: 'img'
+    img: Pho
   },
   'Pad Thai': {
     title: 'Pad Thai',
@@ -29,7 +33,7 @@ const BannerData = {
   'Appetizers': {
     title: 'Appetizers',
     desc: 'Lorem',
-    img: 'img'
+    img: Appetizer
   },
   'Steamed Rice Dishes': {
     title: 'Steamed Rice Dishes',
@@ -44,7 +48,7 @@ const BannerData = {
   'Noodle Soups': {
     title: 'Noodle Soups',
     desc: 'Lorem',
-    img: 'img'
+    img: NoodleSoup
   },
   'Small Soups': {
     title: 'Small Soups',
@@ -64,7 +68,7 @@ const BannerData = {
   'Congee': {
     title: 'Congee',
     desc: 'Lorem',
-    img: 'img'
+    img: Congee,
   },
   'Curry': {
     title: 'Curry',
