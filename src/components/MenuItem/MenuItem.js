@@ -1,31 +1,9 @@
 import React from 'react';
 import { ListGroupItem } from 'reactstrap';
-import styled from 'styled-components';
 import { Item } from 'semantic-ui-react';
+import { PhoSizeOptions, SubOptions, AllItemInfo } from './MenuItem.css'
 
 // TOD0: Refactor
-
-const PhoSizeOptions = styled.ul`
-	padding: inherit;
-	display: flex;
-	list-style: none;
-	justify-content: space-between;
-	width: 40%;
-` 
-const SubOptions = styled.ul`
-	padding: initial;
-	display: flex; 
-	list-style: none; 
-	justify-content: space-between;
-`
-
-const AllItemInfo = styled.section.attrs({
-	className: 'item-name-with-code-price'
-})`
-	display: flex;
-	justify-content: space-between;
-`
-
 const MenuItem = ({item, header}) => {
 	const { code, name, price, desc, subOptions } = item;
 
