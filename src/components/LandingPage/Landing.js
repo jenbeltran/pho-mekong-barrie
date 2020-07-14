@@ -11,7 +11,7 @@ const Landing = () => {
 				<Info>{street}</Info>
 				<Info>{postalcode}</Info>
 				<Wrapper2>
-					<Headline>For Pick Up:</Headline>
+					<Headline>Order For Pick Up:</Headline>
 					<Info>{phone}</Info>
 				</Wrapper2>
 			</Wrapper>
