@@ -16,7 +16,7 @@ const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 			<Menu.Item as="a">
 				<Link href="/menu">Popular Items</Link>
 			</Menu.Item>
-			<Menu.Item as="a" name="fullMenu" active={activeItem === 'fullMenu'} onClick={handleItemClick}>Full Menu</Menu.Item>
+			<Menu.Item as="a" name="Full Menu" active={activeItem === 'Full Menu'} onClick={handleItemClick}>Full Menu</Menu.Item>
 			<Menu.Item as="a" name="Pho" active={activeItem === 'Pho'} onClick={handleItemClick}>Pho</Menu.Item>
 			<Menu.Item as="a" name="Pad Thai" active={activeItem === 'Pad Thai'} onClick={handleItemClick}>Pad Thai</Menu.Item>
 			<Menu.Item as="a" name="Vermicelli" active={activeItem === 'Vermicelli'} onClick={handleItemClick}>Vermicelli</Menu.Item>
