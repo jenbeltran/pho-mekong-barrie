@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import SEO from '../components/seo';
-import NavFullMenu from '../components/NavFullMenu/FullMenu.js';
+import NavDesktop from '../components/NavDesktop/NavDesktop.js';
 import MenuSection from '../components/MenuSection/MenuSection.js';
 import MenuItem from '../components/MenuItem/MenuItem.js';
 import Banner from '../components/Banner/Banner.js';
@@ -29,7 +29,7 @@ const MenuPage = () => {
 	return (
 		<section>
 			<SEO title="Home" />
-			<NavFullMenu activeItem={activeItem} setActiveItem={setActiveItem} />
+			<NavDesktop activeItem={activeItem} setActiveItem={setActiveItem} />
 			{activeItem === 'Pho Mekong' ? (
 				<Landing />
 			) : (
