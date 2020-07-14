@@ -31,6 +31,7 @@ const Desc = styled.section`
 	display: flex;
 	align-items: center;
 	margin: 1em 2em 0 13em;
+	min-height: 3em;
 `
 
 export { BannerHeader, BannerImg, BannerSection, Desc }
