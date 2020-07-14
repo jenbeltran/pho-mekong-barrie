@@ -8,12 +8,12 @@ const BannerData = {
   'Full Menu': {
     title: 'Full Menu',
     desc: 'Lorem Ipsum',
-    img: 'img'
+    img: ''
   },
   'Popular Items': {
     title: 'Popular Items',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Pho': {
     title: 'Pho',
@@ -23,12 +23,12 @@ const BannerData = {
   'Pad Thai': {
     title: 'Pad Thai',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Vermicelli': {
     title: 'Vermicelli',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Appetizers': {
     title: 'Appetizers',
@@ -38,12 +38,12 @@ const BannerData = {
   'Steamed Rice Dishes': {
     title: 'Steamed Rice Dishes',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Fried Rice Dishes': {
     title: 'Fried Rice Dishes',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Noodle Soups': {
     title: 'Noodle Soups',
@@ -53,17 +53,17 @@ const BannerData = {
   'Small Soups': {
     title: 'Small Soups',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Stir-fry Noodles': {
     title: 'Stir-fry Noodles',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Signature Dishes': {
     title: 'Signature Dishes',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Congee': {
     title: 'Congee',
@@ -73,22 +73,22 @@ const BannerData = {
   'Curry': {
     title: 'Curry',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Salads': {
     title: 'Salads',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Beverages': {
     title: 'Beverages',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
   'Contact Us': {
     title: 'Contact Us',
     desc: 'Lorem',
-    img: 'img'
+    img: ''
   },
 };
 
