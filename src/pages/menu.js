@@ -9,7 +9,7 @@ import Landing from '../components/LandingPage/Landing';
 
 // TODO: Move styled components to a separate file
 
-const MenuContent = styled.section`margin: 0 1em 0 12em;`;
+const MenuContent = styled.section`margin: 0 1em 0 13em;`;
 
 const MenuPage = () => {
 	const [ activeItem, setActiveItem ] = useState('Pho Mekong');
