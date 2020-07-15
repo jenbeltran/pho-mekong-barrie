@@ -6,7 +6,7 @@ const BannerImg = styled.img.attrs(props => ({
   src: props.currentImg || PhoBanner,
   alt: 'banner'
 }))`
-  object-fit: none;
+  object-fit: cover;
   height: 16em;
   width: 101%;
   object-position: 75% 40%;
