@@ -1,22 +1,28 @@
-import React, { Fragment } from 'react';
-import { Link } from 'gatsby';
+import React from 'react';
+// import { Link } from 'gatsby';
 import { Menu, Sidebar } from 'semantic-ui-react';
 import { DesktopNavSection } from './NavDesktop.css';
 import NavData from './data.js';
+import { uuid } from 'uuidv4';
 
 const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 
 	const handleItemClick = (evt, {name}) => {
+		
 		setActiveItem(name);
 	};
 
-	// maps through the NavData to render the full Nav Bar
+	const handleItemTab = (evt) => {
+		console.log(evt.target.dataset.name)
+		// setActiveItem(evt.target.dataset.name)
+	}
+
 	// TODO: Check if there is a way to only add the onClick to the parent Sidebar, so all children components get the handler as well
 	const getAllNavItems = NavData.map(nav => {
-		const { name, link } = nav;
+		const { name } = nav;
 		return(
-			<Menu.Item as="a" name={name} active={activeItem === `${name}`} onClick={handleItemClick}>
-				{link ? <Link href={`${link}`}>{name}</Link> : <Fragment>{name}</Fragment>}
+			<Menu.Item key={uuid()} name={name} data-name={name} active={activeItem === `${name}`} tabIndex={0} onKeyDown={handleItemTab} onClick={handleItemClick}>
+				{name}
 			</Menu.Item>
 		)
 	});
