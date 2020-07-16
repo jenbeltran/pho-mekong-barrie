@@ -7,9 +7,9 @@ import { uuid } from 'uuidv4';
 
 const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 
-	const handleItemClick = (evt, {name}) => {
-		setActiveItem(name);
-	};
+	const handleItemClick = (evt) => (
+		setActiveItem(evt.target.dataset.name)
+	);
 
 	const handleItemTab = (evt) => {
 		// console.log(evt.target.dataset.name)
@@ -19,11 +19,10 @@ const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 		}
 	}
 
-	// TODO: Check if there is a way to only add the onClick to the parent Sidebar, so all children components get the handler as well
 	const getAllNavItems = NavData.map(nav => {
 		const { name } = nav;
 		return(
-			<Menu.Item key={uuid()}	name={name} data-name={name} type="button" active={activeItem === `${name}`} tabIndex={0} onKeyDown={handleItemTab} onClick={handleItemClick}>
+			<Menu.Item key={uuid()}	name={name} data-name={name} type="button" active={activeItem === `${name}`} tabIndex={0} onKeyDown={handleItemTab}>
 				{name}
 			</Menu.Item>
 		)
@@ -31,7 +30,7 @@ const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 
 	return (
 		<DesktopNavSection>
-				<Sidebar as={Menu} animation="push" icon="labeled" inverted vertical visible>
+				<Sidebar as={Menu} animation="push" icon="labeled" inverted vertical visible onClick={handleItemClick}>
 					{getAllNavItems}
 			</Sidebar>
 		</DesktopNavSection>
