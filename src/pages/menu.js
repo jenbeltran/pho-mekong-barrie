@@ -6,10 +6,11 @@ import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
 import data from '../components/data';
 import Landing from '../components/LandingPage/Landing';
+import { uuid } from 'uuidv4';
 
 // TODO: Move styled components to a separate file
 
-const MenuContent = styled.section`margin: 0 1em 0 12em;`;
+const MenuContent = styled.section`margin: 0 1em 0 13em;`;
 
 const MenuPage = () => {
 	const [ activeItem, setActiveItem ] = useState('Pho Mekong');
@@ -23,7 +24,7 @@ const MenuPage = () => {
 		fitlered = data.filter((section) => section.header === activeItem);
 	}
 
-	const MenuItems = fitlered.map((section) => <MenuSection section={section} />);
+	const MenuItems = fitlered.map((section) => <MenuSection key={uuid()} section={section} />);
 
 	return (
 		<section>

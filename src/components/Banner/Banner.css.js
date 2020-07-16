@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import PhoBanner from '../../images/test-banner-pho.jpeg';
-import BannerData from './data.js';
+import PhoBanner from '../../images/test-banner-pho.jpeg'; // default banner
 
 const BannerImg = styled.img.attrs(props => ({
   src: props.currentImg || PhoBanner,
   alt: 'banner'
 }))`
-  object-fit: none;
+  object-fit: cover;
   height: 16em;
   width: 101%;
   object-position: 75% 40%;
@@ -20,9 +19,11 @@ const BannerSection = styled.div.attrs({
 	justify-content: center;
 `
 const BannerHeader = styled.h1`
+  text-transform: uppercase;
 	position: absolute;
-	top: 4em;
-	transform: translateX(3em);
+  top: 1em;
+  font-size: 5.5em;
+  transform: translateX(1em);
 `
 
 export { BannerHeader, BannerImg, BannerSection }

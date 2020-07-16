@@ -14,11 +14,17 @@ const SubOptions = styled.ul`
 	justify-content: space-between;
 `
 
-const AllItemInfo = styled.section.attrs({
+const ItemMain = styled.section.attrs({
 	className: 'item-name-with-code-price'
 })`
 	display: flex;
 	justify-content: space-between;
 `
 
-export {PhoSizeOptions, SubOptions, AllItemInfo};
+const ItemDetails = styled.section.attrs({
+	className: 'item-details'
+})`
+	padding-right: 3.5em;
+`
+
+export { PhoSizeOptions, SubOptions, ItemMain, ItemDetails };
