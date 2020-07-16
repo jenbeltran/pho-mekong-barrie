@@ -1,16 +1,16 @@
 import React from 'react';
 import { ListGroupItem } from 'reactstrap';
 import { PhoSizeOptions, SubOptions, ItemMain, ItemDetails } from './MenuItem.css'
-import { Item } from 'semantic-ui-react';
+import { uuid } from 'uuidv4';
 
 // TOD0: Refactor
-const MenuItem = ({item, header}) => {
+const MenuItem = ({ item, header }) => {
 	const { code, name, price, desc, subOptions } = item;
 
 	// Only A5 and Pho items have supoptions
 	const getAllSubOptions = (allOptions) => {
 		return allOptions.map((option) => {
-			return <li>{option}</li>;
+			return <li key={uuid()}>{option}</li>;
 		});
 	};
 
