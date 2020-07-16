@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import PhoBanner from '../../images/test-banner-pho.jpeg';
-import BannerData from './data.js';
+import PhoBanner from '../../images/test-banner-pho.jpeg'; // default banner
 
 const BannerImg = styled.img.attrs(props => ({
   src: props.currentImg || PhoBanner,
