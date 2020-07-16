@@ -25,7 +25,6 @@ const BannerHeader = styled.h1`
   top: 1em;
   font-size: 5.5em;
   transform: translateX(1em);
-  
 `
 
 export { BannerHeader, BannerImg, BannerSection }
