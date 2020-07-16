@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'gatsby';
 import { Menu, Sidebar } from 'semantic-ui-react';
 import { DesktopNavSection } from './NavDesktop.css';
 import NavData from './data.js';
@@ -12,8 +11,6 @@ const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 	);
 
 	const handleItemTab = (evt) => {
-		// console.log(evt.target.dataset.name)
-		// console.log(evt.nativeEvent.key)
 		if(evt.nativeEvent.key === 'Enter') {
 			setActiveItem(evt.target.dataset.name)
 		}
@@ -35,7 +32,6 @@ const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 			</Sidebar>
 		</DesktopNavSection>
 	)
-	
 };
 
 export default SidebarMenuVisible;
