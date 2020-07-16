@@ -20,9 +20,12 @@ const BannerSection = styled.div.attrs({
 	justify-content: center;
 `
 const BannerHeader = styled.h1`
+  text-transform: uppercase;
 	position: absolute;
-	top: 4em;
-	transform: translateX(3em);
+  top: 1em;
+  font-size: 5.5em;
+  transform: translateX(1em);
+  
 `
 
 export { BannerHeader, BannerImg, BannerSection }
