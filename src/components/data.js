@@ -224,13 +224,6 @@ const data = [
 					'Rice paper rolls served with fine vermicelli noodles, lettuce, cucumber, and served with sweet home-made sauce. Rolled with one of the options below. If you prefer a fish sauce as dip, let us know.',
 				subOptions: [ 'A. Shrimp & Pork', 'B. Grilled Beef', 'C. Grilled Chicken', 'D. Vegetables' ]
 			},
-			{ code: 'P1', name: 'Rare beef', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
-			{
-				code: 'P10',
-				name: 'House Special',
-				desc: '(Assorted beef, with vegetables and shrimp)',
-				subOptions: [ 'M: 10.95', 'L: 12.95', 'XL: 12.95' ]
-			},
 			{ code: 'V2C', name: 'Vermicelli with spring roll and grilled chicken', price: 1195 },
 			{ code: 'T2', name: 'Chicken Pad Thai', price: 1195 },
 			{ code: 'T6', name: 'Chicken Tom Yum Noodle Soup', price: 1195 },
