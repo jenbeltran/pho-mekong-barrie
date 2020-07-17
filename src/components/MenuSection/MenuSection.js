@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListGroup } from 'reactstrap';
-import { Paragraph } from './MenuSection.css.js'
+import { Paragraph, FullMenuSubHeader } from './MenuSection.css.js'
 import MenuItem from '../MenuItem/MenuItem.js';
 import { uuid } from 'uuidv4';
 
@@ -14,8 +14,11 @@ const MenuSection = (props) => {
 
 	return (
 		<ListGroup>
-			<Paragraph>{desc}</Paragraph>
-			{allCategoryItems}
+			{props.activeItem === "Full Menu" && <FullMenuSubHeader>{header}</FullMenuSubHeader>}
+			{desc && <Paragraph>{desc}</Paragraph>}
+			<section style={{paddingTop: '1em'}}>
+				{allCategoryItems}
+			</section>
 		</ListGroup>
 	);
 };
