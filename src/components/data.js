@@ -211,6 +211,23 @@ const data = [
 			{ code: 'S8A', name: 'Stir fry ginger shrimp with steamed rice', price: 1395 },
 			{ code: 'S8B', name: 'Spicy satsy stir fry ginger shrimp with steamed rice', price: 1395 }
 		]
+	},
+	{
+		header: 'Popular Items',
+		list: [
+			{ code: 'A1', name: 'Crispy Spring Rolls', price: 495 },
+			{
+				code: 'A5',
+				name: 'Fresh Salad Rolls',
+				price: 495,
+				desc:
+					'Rice paper rolls served with fine vermicelli noodles, lettuce, cucumber, and served with sweet home-made sauce. Rolled with one of the options below. If you prefer a fish sauce as dip, let us know.',
+				subOptions: [ 'A. Shrimp & Pork', 'B. Grilled Beef', 'C. Grilled Chicken', 'D. Vegetables' ]
+			},
+			{ code: 'V2C', name: 'Vermicelli with spring roll and grilled chicken', price: 1195 },
+			{ code: 'T2', name: 'Chicken Pad Thai', price: 1195 },
+			{ code: 'T6', name: 'Chicken Tom Yum Noodle Soup', price: 1195 },
+		]
 	}
 ];
 

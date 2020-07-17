@@ -10,7 +10,7 @@ import { uuid } from 'uuidv4';
 
 // TODO: Move styled components to a separate file
 
-const MenuContent = styled.section`margin: 0 1em 0 13em;`;
+const MenuContent = styled.section`margin: 0em 1em 0 13em;`;
 
 const MenuPage = () => {
 	const [ activeItem, setActiveItem ] = useState('Pho Mekong');
@@ -24,7 +24,7 @@ const MenuPage = () => {
 		fitlered = data.filter((section) => section.header === activeItem);
 	}
 
-	const MenuItems = fitlered.map((section) => <MenuSection key={uuid()} section={section} />);
+	const MenuItems = fitlered.map((section) => <MenuSection key={uuid()} activeItem={activeItem} section={section} />);
 
 	return (
 		<section>
