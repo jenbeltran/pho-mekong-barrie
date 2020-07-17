@@ -12,18 +12,17 @@ const BannerImg = styled.img.attrs(props => ({
   filter: brightness(0.8) opacity(0.6);
 `;
 
-const BannerSection = styled.div.attrs({
-	className: 'pusher'
-})`
+const BannerSection = styled.div`
 	display: flex;
 	justify-content: center;
 `
 const BannerHeader = styled.h1`
   text-transform: uppercase;
 	position: absolute;
-  top: 1em;
-  font-size: 5.5em;
-  transform: translateX(1em);
+  top: 6rem;
+  font-size: 5vw;
+  transform: translateX(8vh);
+  text-align: center;
 `
 
 export { BannerHeader, BannerImg, BannerSection }
