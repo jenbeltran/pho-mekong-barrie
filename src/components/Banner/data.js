@@ -13,9 +13,7 @@ import SteamedRice from '../../images/steamed-rice.png';
 import StirFry from '../../images/stir-fry-noodle.png';
 import Vermicelli from '../../images/vermicelli.png';
 import Signature from '../../images/sig.jpeg';
-import H4 from '../../images/H4.jpeg';
-
-import { Fragment } from 'react';
+import NoodleSoup2 from '../../images/H4.jpeg';
 
 const BannerData = {
   'Full Menu': {
@@ -61,7 +59,7 @@ const BannerData = {
   'Noodle Soups': {
     title: 'Noodle Soups',
     desc: 'Lorem',
-    img: H4
+    img: NoodleSoup2,
   },
   'Small Soups': {
     title: 'Small Soups',
