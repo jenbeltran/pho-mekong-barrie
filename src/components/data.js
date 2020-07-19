@@ -1,6 +1,7 @@
 const data = [
 	{
 		header : 'Appetizers',
+		uri: 'appetizers',
 		list   : [
 			{ code: 'A1', name: 'Crispy Spring Rolls', price: 495 },
 			{ code: 'A2', name: 'Vegetarian Crispy Spring Rolls', price: 495 },
@@ -32,6 +33,7 @@ const data = [
 	},
 	{
 		header : 'Small Soups',
+		uri: 'small-soups',
 		desc   :
 			'These are appetizer soups, there are no noodles. All soup bases are bone bone based. We do not have vegetarian broth.',
 		list   : [
@@ -46,6 +48,7 @@ const data = [
 	},
 	{
 		header : 'Salads',
+		uri: 'salads',
 		desc   : 'Julienned mangoes, cucumber, carrots and bell peppers, topped with mint, fish sauce and peanuts.',
 		list   : [
 			{ code: 'G1', name: 'Mango Salad', price: 745 },
@@ -54,6 +57,7 @@ const data = [
 	},
 	{
 		header : 'Pho',
+		uri: 'pho',
 		desc   :
 			'Pho is a popular Vietnamese noodle soup. Beef bones are simmered for many hours in combination with herbs and spices that help to bring out the flavour. It is served with traditional rice noodles and your choice of meat, or vegetables. Topped with green and white onions and black pepper.',
 		list   : [
@@ -82,6 +86,7 @@ const data = [
 	},
 	{
 		header : 'Noodle Soups',
+		uri: 'noodle-soups',
 		list   : [
 			{ code: 'H1', name: 'Spicy Huế beef vermicelli soup (Bún bò Huế)', price: 1145 },
 			{ code: 'H3', name: 'Wonton and pork egg noodle soup', price: 1145 },
@@ -93,6 +98,7 @@ const data = [
 	},
 	{
 		header : 'Steamed Rice Dishes',
+		uri: 'steamed-rice-dishes',
 		list   : [
 			{ code: 'R1', name: 'Rice with grilled lemongrass porkchop', price: 1145 },
 			{ code: 'R2', name: 'Rice with grilled lemongrass chicken', price: 1145 },
@@ -107,6 +113,7 @@ const data = [
 	},
 	{
 		header : 'Fried Rice Dishes',
+		uri: 'fried-rice-dishes',
 		desc   : 'All fried rice dishes contain egg, carrots, peas and onions.',
 		list   : [
 			{ code: 'F1', name: 'Fried rice with grilled lemongrass porkchop', price: 1295 },
@@ -121,6 +128,7 @@ const data = [
 	},
 	{
 		header : 'Vermicelli',
+		uri: 'vermicelli',
 		desc   : 'All vermicelli dishes are served with a fish sauce dressing.',
 		list   : [
 			{ code: 'V1', name: 'Vermicelli with tofu and vegetarian crispy rolls', price: 1095 },
@@ -140,6 +148,7 @@ const data = [
 	},
 	{
 		header : 'Congee',
+		uri: 'congee',
 		list   : [
 			{ code: 'C1', name: 'Chicken congee', price: 895 },
 			{ code: 'C2', name: 'Pork congee', price: 895 },
@@ -150,6 +159,7 @@ const data = [
 	},
 	{
 		header : 'Pad Thai',
+		uri: 'pad-thai',
 		desc   :
 			'All pad thai dishes contain onions, egg, beansprouts, cabbage and tofu. The home made pad thai sauce contains dairy and shellfish ingredients and peanut butter. Please choose between MILD, MEDIUM, or SPICY',
 		list   : [
@@ -161,6 +171,7 @@ const data = [
 	},
 	{
 		header : 'Spicy Tom Yum Noodle Soup',
+		uri: 'tom-yum-noodle-soups',
 		desc   : 'All tom yum noodle soups come with rice noodles and vegetables',
 		list   : [
 			{ code: 'T5', name: 'Vegetable Tom Yum Noodle Soup', price: 1095 },
@@ -171,6 +182,7 @@ const data = [
 	},
 	{
 		header : 'Stir-fry Noodles',
+		uri: 'stir-fry-noodles',
 		desc   :
 			'An egg noodle stir-fry dish, choose between SOFT or CRISPY noodles. All stir-fry dishes contain onions, cabbage and carrots.',
 		list   : [
@@ -187,6 +199,7 @@ const data = [
 	},
 	{
 		header : 'Curry',
+		uri: 'curry',
 		desc   : 'All curries come with a side of steamed rice. The broth used in our curries are not vegetarian.',
 		list   : [
 			{ code: 'T9', name: 'Yellow chicken curry', price: 1245 },
@@ -199,6 +212,7 @@ const data = [
 	},
 	{
 		header : 'Signature Dishes',
+		uri: 'signature-dishes',
 		list   : [
 			{ code: 'S3A', name: 'Grilled lemongrass chicken (3)', price: 1595 },
 			{ code: 'S3B', name: 'Grilled lemongrass porkchop (3)', price: 1595 },
@@ -214,6 +228,7 @@ const data = [
 	},
 	{
 		header: 'Popular Items',
+		uri: 'popular-items',
 		list: [
 			{ code: 'A1', name: 'Crispy Spring Rolls', price: 495 },
 			{
@@ -231,4 +246,6 @@ const data = [
 	}
 ];
 
-export default data;
+// export default data; 
+module.exports = data;
+
