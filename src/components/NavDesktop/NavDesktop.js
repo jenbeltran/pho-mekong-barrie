@@ -17,9 +17,9 @@ const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 	}
 
 	const getAllNavItems = NavData.map(nav => {
-		const { name } = nav;
+		const { name, uri } = nav;
 		return(
-			<Menu.Item key={uuid()}	name={name} data-name={name} type="button" active={activeItem === `${name}`} tabIndex={0} onKeyDown={handleItemTab}>
+			<Menu.Item key={uuid()}	href={`/${uri}`} name={name} data-name={name} active={activeItem === `${name}`} tabIndex={0} onKeyDown={handleItemTab}>
 				{name}
 			</Menu.Item>
 		)
