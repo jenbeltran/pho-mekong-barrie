@@ -5,25 +5,23 @@ import MenuSection from '../components/MenuSection/MenuSection.js';
 import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
 import { uuid } from 'uuidv4';
-
-// TODO: Move styled components to a separate file
+import data from '../components/data.js'
 
 const MenuContent = styled.section`margin: 0em 1em 0 13em;`;
 
-const MenuPage = (props) => {
+const FullMenu = (props) => {
+	console.log(props.pageContext)
+	const [ activeItem, setActiveItem ] = useState('Full Menu');
 
-	const passedPageContent = [{...props.pageContext.category}];
-	const [ activeItem, setActiveItem ] = useState(props.pageContext.category.header);
-
-	const MenuItems = passedPageContent.map((section) => <MenuSection key={uuid()} activeItem={activeItem} section={section} />);
+	const MenuItems = data.map((section) => <MenuSection key={uuid()} activeItem={activeItem} section={section} />);
 
 	return (
 		<section>
 			<SEO title="Home" />
 			<NavDesktop activeItem={activeItem} setActiveItem={setActiveItem} />
-				<Banner activeItem={passedPageContent[0].header}/>
+				<Banner activeItem="Full Menu"/>
 				<MenuContent>{MenuItems}</MenuContent>
 		</section>
 	);
 };
-export default MenuPage;
+export default FullMenu;
