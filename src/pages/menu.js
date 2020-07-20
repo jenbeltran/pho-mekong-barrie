@@ -4,8 +4,6 @@ import NavDesktop from '../components/NavDesktop/NavDesktop.js';
 import MenuSection from '../components/MenuSection/MenuSection.js';
 import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
-import data from '../components/data';
-import Landing from '../components/LandingPage/Landing';
 import { uuid } from 'uuidv4';
 
 // TODO: Move styled components to a separate file
