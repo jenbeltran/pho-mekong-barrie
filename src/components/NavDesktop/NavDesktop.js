@@ -4,6 +4,7 @@ import { DesktopNavSection } from './NavDesktop.css';
 import NavData from './data.js';
 import { uuid } from 'uuidv4';
 
+// TODO: Have to add the click when tabbing through the nav options!
 const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 
 	const handleItemClick = (evt) => (
