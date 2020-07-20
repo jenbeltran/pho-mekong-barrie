@@ -35,7 +35,7 @@ const data = [
 		header : 'Small Soups',
 		uri: 'small-soups',
 		desc   :
-			'These are appetizer soups, there are no noodles. All soup bases are bone bone based. We do not have vegetarian broth.',
+			'These are appetizer soups, there are no noodles. All soup bases are all bone based. We do not have vegetarian broth.',
 		list   : [
 			{ code: 'A10', name: 'Vegetable soup', price: 595 },
 			{ code: 'A11S', name: 'Wonton (shrimp & pork filling) Soup - Small', price: 695 },
