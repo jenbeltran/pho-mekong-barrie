@@ -39,7 +39,7 @@ const data = [
 		list   : [
 			{ code: 'A10', name: 'Vegetable soup', price: 595 },
 			{ code: 'A11S', name: 'Wonton (shrimp & pork filling) Soup - Small', price: 695 },
-			{ code: 'A11L', name: 'Wonton (shrimp & pork filling) Soup - Large', price: 695 },
+			{ code: 'A11L', name: 'Wonton (shrimp & pork filling) Soup - Large', price: 895 },
 			{ code: 'A12A', name: 'Tom Yum Soup - Chicken', price: 695 },
 			{ code: 'A12B', name: 'Tom Yum Soup - Vegetables', price: 595 },
 			{ code: 'A12C', name: 'Tom Yum Soup - Seafood', price: 795 },
@@ -242,6 +242,15 @@ const data = [
 			{ code: 'V2C', name: 'Vermicelli with spring roll and grilled chicken', price: 1195 },
 			{ code: 'T2', name: 'Chicken Pad Thai', price: 1195 },
 			{ code: 'T6', name: 'Chicken Tom Yum Noodle Soup', price: 1195 },
+		]
+	},
+	{
+		header: 'Beverages',
+		uri: 'beverages',
+		list: [
+			{code: 'B4', name: 'Vietnamese Iced Coffee', price: 495},
+			{code: 'B9', name: 'Milkshake', desc: 'A cold blended drink, contains sugar, ice and milk', price: 495, subOptions: ['A. Avocado', 'M. Mango', 'S. Strawberry']},
+			{code: 'B10', name: 'Bubble tea slushie', desc: 'These come with tapioca, and blended with ice, milk and sugar', price: 495}
 		]
 	}
 ];
