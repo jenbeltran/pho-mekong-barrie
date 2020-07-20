@@ -5,10 +5,17 @@ exports.createPages = ({ actions: { createPage } }) => {
   createPage({
     path:`/`,
     component: require.resolve('./src/pages/index.js'),
-    context: { allMenuData }
+    context: { allMenuData },
   });
 
-  // Different menu pages
+  // page for the full menu
+  createPage({
+    path: `/full-menu`,
+    component: require.resolve('./src/pages/fullMenu.js'),
+    // context: allMenuData,
+  });
+
+    // Different menu pages
   allMenuData.forEach(category => {
     createPage({
       path:`/${category.uri}/`,
