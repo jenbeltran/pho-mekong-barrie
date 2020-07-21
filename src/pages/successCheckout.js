@@ -2,19 +2,16 @@ import React from 'react';
 import SEO from '../components/seo';
 import NavDesktop from '../components/NavDesktop/NavDesktop.js';
 import NavMobile from '../components/NavMobile/NavMobile.js';
-import Checkout from '../components/Checkout/Checkout';
 
-import Landing from '../components/LandingPage/Landing';
-
-const IndexPage = () => {
+const SuccessCheckout = () => {
 	return (
 		<div>
-			<SEO title="Home" />
+			<SEO title="SuccessCheckout" />
 			<NavDesktop />
-			<Landing />
-			<Checkout />
+			<NavMobile />
+			<h1>Thank you for your order - an email has been sent with a receipt</h1>
 		</div>
 	);
 };
 
-export default IndexPage;
+export default SuccessCheckout;
