@@ -16,7 +16,7 @@ import {
 
 const Nav = () => {
 	return (
-		<div>
+		<nav id="mobile-nav">
 			<CheckboxLabel htmlFor="mobile-nav-icon">
 				<MobileNavIcon />
 			</CheckboxLabel>
@@ -53,7 +53,7 @@ const Nav = () => {
 					</StyleNavLinks>
 				</NavElement>
 			</StyleNav>
-		</div>
+		</nav>
 	);
 };
 
