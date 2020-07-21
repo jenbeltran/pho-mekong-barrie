@@ -17,7 +17,7 @@ const MenuItem = ({ item, header }) => {
 	return (
 		<ListGroupItem key={code}>
 			<ItemMain>
-				<section className="item-name-and-code">
+				<section className="item-name-and-code" style={{paddingRight: '1em'}}>
 					{code}. {name}
 				</section>
 				{header !== 'Pho' && <section className="price">{(price / 100).toFixed(2)}</section>}
