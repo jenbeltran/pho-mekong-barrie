@@ -1,3 +1,7 @@
 html {
   width: 99vw;
 }
+
+#mobile-nav {
+  height: 0;
+}
