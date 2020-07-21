@@ -2,17 +2,18 @@ import React from 'react';
 import SEO from '../components/seo';
 import NavDesktop from '../components/NavDesktop/NavDesktop.js';
 import NavMobile from '../components/NavMobile/NavMobile.js';
+import Checkout from '../components/Checkout/Checkout';
 
-import Landing from '../components/LandingPage/Landing';
-
-const IndexPage = () => {
+const ViewCart = () => {
 	return (
 		<div>
-			<SEO title="Home" />
+			<SEO title="shoppingCart" />
 			<NavDesktop />
-			<Landing />
+			<NavMobile />
+			<h1>Shopping Cart</h1>
+			<Checkout />
 		</div>
 	);
 };
 
-export default IndexPage;
+export default ViewCart;
