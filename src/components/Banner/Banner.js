@@ -5,10 +5,10 @@ import BannerData from './data.js';
 // This commponent is the top section of the content
 const Banner = ({activeItem}) => {
   return(
-    <section style={{minHeight: '16em'}}>
+    <section id="banner-title">
       <BannerImg currentImg={BannerData[activeItem].img}/>
       <BannerSection>
-      <BannerHeader>{activeItem}</BannerHeader>
+        <BannerHeader>{activeItem}</BannerHeader>
       </BannerSection>
     </section>
   )
