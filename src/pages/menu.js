@@ -9,7 +9,11 @@ import { uuid } from 'uuidv4';
 
 // TODO: Move styled components to a separate file
 
-const MenuContent = styled.section`margin: 0em 1em 0 13em;`;
+const MenuContent = styled.section.attrs({
+	id: 'content'
+})`
+	margin: 0em 1em 0 13em;
+`;
 
 const MenuPage = (props) => {
 
