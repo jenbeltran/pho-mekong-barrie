@@ -8,6 +8,7 @@ const PhoSizeOptions = styled.ul`
 	width: 40%;
 ` 
 const SubOptions = styled.ul`
+	margin-top: 1em;
 	padding: initial;
 	display: flex; 
 	list-style: none; 
