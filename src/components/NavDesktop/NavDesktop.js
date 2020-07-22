@@ -27,7 +27,7 @@ const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 	});
 
 	return (
-		<DesktopNavSection>
+		<DesktopNavSection id="nav-desktop">
 				<Sidebar as={Menu} animation="push" icon="labeled" inverted vertical visible onClick={handleItemClick}>
 					{getAllNavItems}
 			</Sidebar>
