@@ -54,4 +54,14 @@ const RestaurantPhoto = styled.img`
 	}
 `;
 
-export { LandingSection, Wrapper, Wrapper2, Headline, Info, RestaurantPhoto };
+const LogoPhoto = styled.img`
+	@media (min-width: 481px) {
+		height: 5rem;
+	}
+
+	@media (max-width: 480px) {
+		width: 100%;
+		height: auto;
+	}
+`;
+export { LandingSection, Wrapper, Wrapper2, Headline, Info, RestaurantPhoto, LogoPhoto };

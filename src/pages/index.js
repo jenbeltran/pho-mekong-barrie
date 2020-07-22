@@ -2,7 +2,6 @@ import React from 'react';
 import SEO from '../components/seo';
 import NavDesktop from '../components/NavDesktop/NavDesktop.js';
 import NavMobile from '../components/NavMobile/NavMobile.js';
-
 import Landing from '../components/LandingPage/Landing';
 
 const IndexPage = () => {
@@ -10,6 +9,7 @@ const IndexPage = () => {
 		<div>
 			<SEO title="Home" />
 			<NavDesktop />
+			<NavMobile />
 			<Landing />
 		</div>
 	);

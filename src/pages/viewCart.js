@@ -1,19 +1,17 @@
 import React from 'react';
 import SEO from '../components/seo';
 import NavDesktop from '../components/NavDesktop/NavDesktop.js';
-import NavMobile from '../components/NavMobile/NavMobile.js';
+import Banner from '../components/Banner/Banner.js';
 import Checkout from '../components/Checkout/Checkout';
 
-const ViewCart = () => {
+const ViewCart = (props) => {
 	return (
-		<div>
-			<SEO title="shoppingCart" />
+		<section>
+			<SEO title="Home" />
 			<NavDesktop />
-			<NavMobile />
-			<h1>Shopping Cart</h1>
+			<Banner activeItem="Full Menu" />
 			<Checkout />
-		</div>
+		</section>
 	);
 };
-
 export default ViewCart;
