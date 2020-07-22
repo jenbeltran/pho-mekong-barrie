@@ -11,7 +11,6 @@ const SuccessCheckout = (props) => {
 		<div>
 			<NavDesktop />
 			<NavMobile />
-
 			<LandingSection>
 				<Wrapper>
 					<Headline>Thank you for ordering!</Headline>
