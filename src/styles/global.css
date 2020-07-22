@@ -5,3 +5,43 @@ html {
 #mobile-nav {
   height: 0;
 }
+
+@media (min-width: 100px) and (max-width: 480px) {
+  html {
+    width: 100%;
+  }
+
+  #content {
+    font-size: 0.75rem;
+    margin: 0em 1em 0em 1em;
+  }
+
+  #banner-header {
+    transform: translateX(0);
+    font-size: 2em;
+  }
+
+  #banner-img {
+    height: 9em;
+  }
+
+  #item-container {
+    font-size: 0.9em;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #banner-img {
+    height: 8.5rem;
+  }
+
+  #banner-header {
+    top: 2rem;
+  }
+
+  #content {
+    font-size: 0.75rem;
+    margin: 0em 1em 0em 18em;
+  }
+}
