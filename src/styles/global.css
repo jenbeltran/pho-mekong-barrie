@@ -13,7 +13,11 @@ html {
 
   #content {
     font-size: 0.75rem;
-    margin: 0em 1em 0em 1em;
+    margin: 0em 1em 1em 1em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
   }
 
   #banner-header {
