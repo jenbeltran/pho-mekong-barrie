@@ -12,7 +12,8 @@ import {
 	CheckboxInput,
 	CheckboxLabel,
 	MobileNavIcon,
-	NavElement
+	NavElement,
+
 } from './NavMobile.css';
 
 const displayMobileNavItems = () => {
@@ -34,7 +35,7 @@ const getAllNavLinks = navData.map(navItem => {
 
 const Nav = () => {
 	return (
-		<nav>
+		<nav style={{height: '0'}}>
 			<CheckboxLabel htmlFor="mobile-nav-icon">
 				<MobileNavIcon />
 			</CheckboxLabel>
