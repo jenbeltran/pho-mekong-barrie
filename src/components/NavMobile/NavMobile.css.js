@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+// TODO: Fix the hamburger menu icon
 export const StyleNav = styled.section`
 	@media screen and (min-width: 481px) {
 		display: none;
@@ -98,6 +99,7 @@ export const CheckboxInput = styled.input`
     height 100%;
   }
 `;
+
 export const MobileNavIcon = styled.span`
   height: 2px;
   width: 30px;

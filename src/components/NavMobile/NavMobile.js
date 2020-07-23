@@ -34,7 +34,7 @@ const getAllNavLinks = navData.map(navItem => {
 
 const Nav = () => {
 	return (
-		<NavElement>
+		<nav>
 			<CheckboxLabel htmlFor="mobile-nav-icon">
 				<MobileNavIcon />
 			</CheckboxLabel>
@@ -52,7 +52,7 @@ const Nav = () => {
 					</StyleNavLinks>
 				</NavElement>
 			</StyleNav>
-		</NavElement>
+		</nav>
 	);
 };
 

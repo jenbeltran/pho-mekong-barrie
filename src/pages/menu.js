@@ -7,7 +7,7 @@ import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
 import { uuid } from 'uuidv4';
 
-// TODO: Move styled components to a separate file
+// TODO: use useRef instead of useState
 
 const MenuContent = styled.section.attrs({
 	id: 'content'
