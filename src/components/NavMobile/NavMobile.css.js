@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+// TODO: Fix the hamburger menu icon
 export const StyleNav = styled.section`
 	@media screen and (min-width: 481px) {
 		display: none;
@@ -21,11 +22,11 @@ export const StyledNavBrand = styled.div`
 	justify-content: center;
 
 	margin-bottom: 2rem;
-
+	margin-top: 1rem;
 	img {
 		width: auto;
 		display: block;
-		height: 85px;
+		height: 4rem;
 	}
 `;
 
@@ -35,19 +36,30 @@ export const StyleNavLinks = styled.ul`
 	margin: auto;
 	flex-direction: column;
 	padding: 0;
+	height: auto;
 `;
 
 export const NavListItem = styled.li`
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1rem;
 	margin-bottom: 2rem;
 `;
 
 export const NavLink = styled(Link)`
-color: black;
+	color: teal;
+	display: flex;
+	justify-content: center;
 `;
 
-export const NavElement = styled.nav``;
+export const NavElement = styled.nav.attrs({
+	id: 'nav-mobile'
+})`
+	overflow-y: scroll;
+	width: 98%;
+	::-webkit-scrollbar {
+    width: 0px;
+}
+`;
 
 export const CheckboxLabel = styled.label`
 	@media screen and (max-width: 480px) {
@@ -87,6 +99,7 @@ export const CheckboxInput = styled.input`
     height 100%;
   }
 `;
+
 export const MobileNavIcon = styled.span`
   height: 2px;
   width: 30px;

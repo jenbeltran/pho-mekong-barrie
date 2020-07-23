@@ -14,6 +14,7 @@ const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 	const handleItemTab = (evt) => {
 		if(evt.nativeEvent.key === 'Enter') {
 			setActiveItem(evt.target.dataset.name)
+			evt.target.click();
 		}
 	}
 
@@ -27,8 +28,8 @@ const SidebarMenuVisible = ({activeItem, setActiveItem}) => {
 	});
 
 	return (
-		<DesktopNavSection>
-				<Sidebar as={Menu} animation="push" icon="labeled" inverted vertical visible onClick={handleItemClick}>
+		<DesktopNavSection id="nav-desktop">
+				<Sidebar ui sidebar as={Menu} animation="push" icon="labeled" inverted vertical visible onClick={handleItemClick}>
 					{getAllNavItems}
 			</Sidebar>
 		</DesktopNavSection>
