@@ -15,7 +15,11 @@ import {
 	NavElement
 } from './NavMobile.css';
 
-// navData.push({ name: 'Order Online', uri: '' });
+const displayMobileNavItems = () => {
+	// filter the nav Data
+	
+	// map through updated data to return 
+}
 
 const getAllNavLinks = navData.map(navItem => {
 	const { name, uri } = navItem;
@@ -24,7 +28,6 @@ const getAllNavLinks = navData.map(navItem => {
 			<NavLink to={`/${uri}`} activeClassName="is-active">
 				{name}
 			</NavLink>
-			{/* <hr></hr> */}
 		</NavListItem>
 	)
 })
