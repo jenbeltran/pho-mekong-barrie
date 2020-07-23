@@ -7,7 +7,7 @@ import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
 import { uuid } from 'uuidv4';
 
-// TODO: use useRef instead of useState
+// TODO: use useRef instead of useState (also present in fullMenu page)
 
 const MenuContent = styled.section.attrs({
 	id: 'content'
