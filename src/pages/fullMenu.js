@@ -8,7 +8,11 @@ import styled from 'styled-components';
 import { uuid } from 'uuidv4';
 import data from '../components/data.js'
 
-const MenuContent = styled.section`margin: 0em 1em 0 13em;`;
+const MenuContent = styled.section.attrs({
+	id: 'content'
+})`
+	margin: 0em 1em 0 13em;
+`;
 
 const FullMenu = (props) => {
 	
