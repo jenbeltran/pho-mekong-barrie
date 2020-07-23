@@ -16,12 +16,6 @@ import {
 
 } from './NavMobile.css';
 
-const displayMobileNavItems = () => {
-	// filter the nav Data
-	
-	// map through updated data to return 
-}
-
 const getAllNavLinks = navData.map(navItem => {
 	const { name, uri } = navItem;
 	return(

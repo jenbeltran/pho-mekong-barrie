@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-// TODO: Fix the hamburger menu icon
 export const StyleNav = styled.section`
 	@media screen and (min-width: 481px) {
 		display: none;
@@ -112,7 +111,7 @@ export const MobileNavIcon = styled.span`
   &::before, &::after {
     content: "";
     display: block;
-    background: white
+    background: white;
     width: 30px;
     height: 2px;
     position: absolute;
