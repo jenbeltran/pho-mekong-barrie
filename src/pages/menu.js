@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SEO from '../components/seo';
 import NavDesktop from '../components/NavDesktop/NavDesktop.js';
 import NavMobile from '../components/NavMobile/NavMobile.js';
@@ -18,15 +18,15 @@ const MenuContent = styled.section.attrs({
 const MenuPage = (props) => {
 
 	const passedPageContent = [{...props.pageContext.category}];
-	const [ activeItem, setActiveItem ] = useState(props.pageContext.category.header);
+
 	console.log('menu page: ', props)
-	const MenuItems = passedPageContent.map((section) => <MenuSection key={uuid()} activeItem={activeItem} section={section} />);
+	const MenuItems = passedPageContent.map((section) => <MenuSection key={uuid()}  section={section} />);
 
 	return (
 		<section>
 			<SEO title={passedPageContent[0].header} />
 			<NavMobile/>
-			<NavDesktop activeItem={activeItem} setActiveItem={setActiveItem} />
+			<NavDesktop activeItem={passedPageContent[0].header} />
 				<Banner activeItem={passedPageContent[0].header}/>
 				<MenuContent>{MenuItems}</MenuContent>
 		</section>
