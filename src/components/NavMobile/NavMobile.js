@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import logo from '../../images/logo-favicon.png';
 import navData from '../NavDesktop/data.js';
+import { uuid } from 'uuidv4';
 
 import {
 	StyleNav,
@@ -19,8 +20,8 @@ import {
 const getAllNavLinks = navData.map(navItem => {
 	const { name, uri } = navItem;
 	return(
-		<NavListItem>
-			<NavLink to={`/${uri}`} activeClassName="is-active">
+		<NavListItem key={uuid()}>
+			<NavLink to={`/${uri}`}  activeClassName="is-active">
 				{name}
 			</NavLink>
 		</NavListItem>
