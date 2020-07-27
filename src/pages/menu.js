@@ -19,12 +19,12 @@ const MenuPage = (props) => {
 
 	const passedPageContent = [{...props.pageContext.category}];
 	const [ activeItem, setActiveItem ] = useState(props.pageContext.category.header);
-
+	console.log('menu page: ', props)
 	const MenuItems = passedPageContent.map((section) => <MenuSection key={uuid()} activeItem={activeItem} section={section} />);
 
 	return (
 		<section>
-			<SEO title="Home" />
+			<SEO title={passedPageContent[0].header} />
 			<NavMobile/>
 			<NavDesktop activeItem={activeItem} setActiveItem={setActiveItem} />
 				<Banner activeItem={passedPageContent[0].header}/>
