@@ -12,7 +12,7 @@ exports.createPages = ({ actions: { createPage } }) => {
   createPage({
     path: `/full-menu`,
     component: require.resolve('./src/pages/fullMenu.js'),
-    // context: allMenuData,
+    context: { header: 'Full Menu', uri: 'full-menu', list: allMenuData },
   });
 
     // Different menu pages
