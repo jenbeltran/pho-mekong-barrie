@@ -6,7 +6,6 @@ import MenuSection from '../components/MenuSection/MenuSection.js';
 import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
 import { uuid } from 'uuidv4';
-import data from '../components/data.js'
 
 const MenuContent = styled.section.attrs({
 	id: 'content'
