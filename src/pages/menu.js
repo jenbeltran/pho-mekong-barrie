@@ -15,19 +15,19 @@ const MenuContent = styled.section.attrs({
 
 const MenuPage = (props) => {
 
-	const passedPageContent = [{...props.pageContext.category}];
-
-	console.log('menu page: ', props)
-	const MenuItems = passedPageContent.map((section) => <MenuSection key={uuid()}  section={section} />);
+	const { header, uri, desc, list } = props.pageContext.category;
 
 	return (
 		<section>
-			<SEO title={passedPageContent[0].header} />
+			<SEO title={header} />
 			<NavMobile/>
-			<NavDesktop activeItem={passedPageContent[0].header} />
-				<Banner activeItem={passedPageContent[0].header}/>
-				<MenuContent>{MenuItems}</MenuContent>
+			<NavDesktop activeItem={header} />
+				<Banner activeItem={header}/>
+				<MenuContent>
+					<MenuSection key={uuid()} section={props.pageContext.category}/>
+				</MenuContent>
 		</section>
 	);
 };
+
 export default MenuPage;
