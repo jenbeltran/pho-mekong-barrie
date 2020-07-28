@@ -3,7 +3,6 @@ import PhoBanner from '../../images/test-banner-pho.jpeg'; // default banner
 
 const BannerImg = styled.img.attrs(props => ({
   src: props.currentImg || PhoBanner,
-  alt: 'banner',
   id: 'banner-img'
 }))`
   object-fit: cover;
