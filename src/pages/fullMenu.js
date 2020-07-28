@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SEO from '../components/seo';
 import NavDesktop from '../components/NavDesktop/NavDesktop.js';
 import NavMobile from '../components/NavMobile/NavMobile.js';
@@ -15,18 +15,17 @@ const MenuContent = styled.section.attrs({
 `;
 
 const FullMenu = (props) => {
-	
-	const [ activeItem, setActiveItem ] = useState('Full Menu');
+	const { list, header } = props.pageContext;
 
-	const MenuItems = data.map((section) => <MenuSection key={uuid()} activeItem={activeItem} section={section} />);
+	const MenuItems = list.map((section) => <MenuSection fullMenu key={uuid()} section={section} />);
 
 	return (
 		<section>
 			<SEO title="Home" />
       <NavMobile />
-			<NavDesktop activeItem={activeItem} setActiveItem={setActiveItem} />
-				<Banner activeItem="Full Menu"/>
-				<MenuContent>{MenuItems}</MenuContent>
+			<NavDesktop activeItem={header} />
+				<Banner activeItem={header}/>
+				<MenuContent >{MenuItems}</MenuContent>
 		</section>
 	);
 };
