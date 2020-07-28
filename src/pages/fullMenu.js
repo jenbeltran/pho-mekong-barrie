@@ -16,16 +16,17 @@ const MenuContent = styled.section.attrs({
 
 const FullMenu = (props) => {
 	const { list, header } = props.pageContext;
-
+	
+	// receives an array of all the sections of the menu to render
 	const MenuItems = list.map((section) => <MenuSection fullMenu key={uuid()} section={section} />);
 
 	return (
 		<section>
-			<SEO title="Home" />
-      <NavMobile />
+			<SEO title={header} />
+      <NavMobile/>
 			<NavDesktop activeItem={header} />
 				<Banner activeItem={header}/>
-				<MenuContent >{MenuItems}</MenuContent>
+				<MenuContent>{MenuItems}</MenuContent>
 		</section>
 	);
 };
