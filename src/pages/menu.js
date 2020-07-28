@@ -15,7 +15,7 @@ const MenuContent = styled.section.attrs({
 
 const MenuPage = (props) => {
 
-	const { header, uri, desc, list } = props.pageContext.category;
+	const { header } = props.pageContext.category;
 
 	return (
 		<section>
