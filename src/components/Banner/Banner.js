@@ -4,7 +4,6 @@ import BannerData from './data.js';
 
 // This commponent is the top section of the content
 const Banner = ({activeItem}) => {
-  console.log('banner active item: ', activeItem)
   return(
     <section id="banner-title">
       <BannerImg alt={`${activeItem} Banner`} currentImg={BannerData[activeItem].img}/>
