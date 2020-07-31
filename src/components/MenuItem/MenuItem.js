@@ -15,12 +15,12 @@ const MenuItem = ({ item, header }) => {
 	};
 
 	return (
-		<ListGroupItem key={code}>
+		<ListGroupItem key={code} id="item-container">
 			<ItemMain>
-				<section className="item-name-and-code">
+				<section className="item-name-and-code" style={{paddingRight: '1em', maxWidth: '60%'}}>
 					{code}. {name}
 				</section>
-				{header !== 'Pho' && <section className="price">{(price / 100).toFixed(2)}</section>}
+				{header !== 'Pho' && <section className="price" style={{alignSelf: 'center'}}>{(price / 100).toFixed(2)}</section>}
 				{header === 'Pho' &&
 				subOptions && (
 					<PhoSizeOptions>

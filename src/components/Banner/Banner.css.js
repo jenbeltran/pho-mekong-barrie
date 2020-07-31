@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import PhoBanner from '../../images/test-banner-pho.jpeg'; // default banner
+import defaultBanner from '../../images/test-banner-pho.jpeg';
 
 const BannerImg = styled.img.attrs(props => ({
-  src: props.currentImg || PhoBanner,
-  alt: 'banner'
+  src: props.currentImg || defaultBanner,
+  id: 'banner-img'
 }))`
   object-fit: cover;
   height: 16em;
@@ -12,16 +12,20 @@ const BannerImg = styled.img.attrs(props => ({
   filter: brightness(0.8) opacity(0.6);
 `;
 
-const BannerSection = styled.div`
+const BannerSection = styled.div.attrs({
+  id: 'banner-section'
+})`
 	display: flex;
 	justify-content: center;
 `
-const BannerHeader = styled.h1`
+const BannerHeader = styled.h1.attrs({
+  id: 'banner-header'
+})`
   text-transform: uppercase;
 	position: absolute;
   top: 6rem;
   font-size: 5vw;
-  transform: translateX(8vh);
+  transform: translateX(11vh);
   text-align: center;
 `
 

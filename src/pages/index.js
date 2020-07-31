@@ -8,6 +8,7 @@ const IndexPage = () => {
 	return (
 		<div>
 			<SEO title="Home" />
+			<NavMobile />
 			<NavDesktop />
 			<NavMobile />
 			<Landing />

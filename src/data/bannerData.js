@@ -1,4 +1,4 @@
-import { Pho, Appetizer, Congee, PadThai, Beverages, Curry, Salad, FriedRice, SmallSoup, SteamedRice, StirFry, Vermicelli, Signature, NoodleSoup2, BunBoHue, TomYumNoodle } from '../../images/index.js';
+import { Pho, Appetizer, Congee, BunBoHue, PadThai, Beverages, Curry, Salad, FriedRice, SmallSoup, SteamedRice, StirFry, Vermicelli, Signature, NoodleSoup2, TomYumNoodle, } from '../images/index.js';
 
 const BannerData = {
   'Full Menu': {
@@ -39,7 +39,7 @@ const BannerData = {
   },
   'Noodle Soups': {
     title: 'Noodle Soups',
-    img: NoodleSoup2,
+    img: NoodleSoup2
   },
   'Small Soups': {
     title: 'Small Soups',
@@ -55,7 +55,7 @@ const BannerData = {
   },
   'Congee': {
     title: 'Congee',
-    img: Congee,
+    img: Congee
   },
   'Curry': {
     title: 'Curry',
@@ -75,4 +75,4 @@ const BannerData = {
   },
 };
 
-export default BannerData;
+export { BannerData }; 

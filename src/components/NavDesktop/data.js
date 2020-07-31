@@ -40,6 +40,10 @@ const NavData = [
     uri: "noodle-soups",
   },
   {
+    name: "Tom Yum Noodle Soups",
+    uri: "tom-yum-noodle-soups",
+  },
+  {
     name: "Small Soups",
     uri: "small-soups",
   },
@@ -71,6 +75,10 @@ const NavData = [
     name: "Contact Us",
     uri: "",
   }
+  // {
+  //   name: 'Sides/Extras',
+  //   uri: 'extras'
+  // }
 ];
 
 export default NavData;

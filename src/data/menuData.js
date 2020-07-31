@@ -74,7 +74,7 @@ const data = [
 			{ code: 'P6', name: 'Beef ball', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
 			{ code: 'P7', name: 'Chicken', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
 			{ code: 'P8', name: 'Vegetables', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
-			{ code: 'P9', name: 'Vegetables', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
+			{ code: 'P9', name: 'Assorted Beef, tendon and', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
 			{
 				code: 'P10',
 				name: 'House Special',
@@ -170,7 +170,7 @@ const data = [
 		]
 	},
 	{
-		header : 'Spicy Tom Yum Noodle Soup',
+		header : 'Tom Yum Noodle Soup',
 		uri: 'tom-yum-noodle-soups',
 		desc   : 'All tom yum noodle soups come with rice noodles and vegetables',
 		list   : [
@@ -226,33 +226,6 @@ const data = [
 			{ code: 'S8B', name: 'Spicy satsy stir fry ginger shrimp with steamed rice', price: 1395 }
 		]
 	},
-	{
-		header: 'Popular Items',
-		uri: 'popular-items',
-		list: [
-			{ code: 'A1', name: 'Crispy Spring Rolls', price: 495 },
-			{
-				code: 'A5',
-				name: 'Fresh Salad Rolls',
-				price: 495,
-				desc:
-					'Rice paper rolls served with fine vermicelli noodles, lettuce, cucumber, and served with sweet home-made sauce. Rolled with one of the options below. If you prefer a fish sauce as dip, let us know.',
-				subOptions: [ 'A. Shrimp & Pork', 'B. Grilled Beef', 'C. Grilled Chicken', 'D. Vegetables' ]
-			},
-			{ code: 'V2C', name: 'Vermicelli with spring roll and grilled chicken', price: 1195 },
-			{ code: 'T2', name: 'Chicken Pad Thai', price: 1195 },
-			{ code: 'T6', name: 'Chicken Tom Yum Noodle Soup', price: 1195 },
-		]
-	},
-	{
-		header: 'Beverages',
-		uri: 'beverages',
-		list: [
-			{code: 'B4', name: 'Vietnamese Iced Coffee', price: 495},
-			{code: 'B9', name: 'Milkshake', desc: 'Contains sugar, ice and milk', price: 495, subOptions: ['A. Avocado', 'M. Mango', 'S. Strawberry']},
-			{code: 'B10', name: 'Bubble tea slushie', desc: 'These come with tapioca, and blended with ice, milk and sugar', price: 495}
-		]
-	}
 ];
 
 // export default data; 

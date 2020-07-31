@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import logo from '../../images/logo-favicon.png';
+import navData from '../NavDesktop/data.js';
+import { uuid } from 'uuidv4';
 
 import {
 	StyleNav,
@@ -11,12 +13,24 @@ import {
 	CheckboxInput,
 	CheckboxLabel,
 	MobileNavIcon,
-	NavElement
+	NavElement,
+
 } from './NavMobile.css';
+
+const getAllNavLinks = navData.map(navItem => {
+	const { name, uri } = navItem;
+	return(
+		<NavListItem key={uuid()}>
+			<NavLink to={`/${uri}`}  activeClassName="is-active">
+				{name}
+			</NavLink>
+		</NavListItem>
+	)
+})
 
 const Nav = () => {
 	return (
-		<div>
+		<nav style={{height: '0'}}>
 			<CheckboxLabel htmlFor="mobile-nav-icon">
 				<MobileNavIcon />
 			</CheckboxLabel>
@@ -29,31 +43,12 @@ const Nav = () => {
 					</Link>
 				</StyledNavBrand>
 				<NavElement>
-					<StyleNavLinks>
-						<NavListItem>
-							<NavLink to="/menu" activeClassName="is-active">
-								Popular Items
-							</NavLink>
-						</NavListItem>
-						<NavListItem>
-							<NavLink to="/menu" activeClassName="is-active">
-								Pho Soups
-							</NavLink>
-						</NavListItem>
-						<NavListItem>
-							<NavLink to="menu" activeClassName="is-active">
-								Full Menu
-							</NavLink>
-						</NavListItem>
-						<NavListItem>
-							<NavLink to="/" activeClassName="is-active">
-								Order Now
-							</NavLink>
-						</NavListItem>
+				<StyleNavLinks>
+						{getAllNavLinks}
 					</StyleNavLinks>
 				</NavElement>
 			</StyleNav>
-		</div>
+		</nav>
 	);
 };
 

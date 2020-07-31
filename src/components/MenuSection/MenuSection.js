@@ -6,14 +6,16 @@ import { uuid } from 'uuidv4';
 
 // retreives data, props, and renders each item, this component sits below its respective Banner component
 const MenuSection = (props) => {
+
 	const { header, list, desc } = props.section;
+	
 	let allCategoryItems = list.map((item) => {
 		return <MenuItem key={uuid()} item={item} header={header} />;
 	});
 
 	return (
 		<ListGroup>
-			{props.activeItem === "Full Menu" && <FullMenuSubHeader>{header}</FullMenuSubHeader>}
+			{props.fullMenu && <FullMenuSubHeader>{header}</FullMenuSubHeader>}
 			{desc && <Paragraph>{desc}</Paragraph>}
 			<section style={{paddingTop: '1em'}}>
 				{allCategoryItems}
