@@ -15,7 +15,7 @@ const data = [
 					'Rice paper rolls served with fine vermicelli noodles, lettuce, cucumber, and served with sweet home-made sauce. Rolled with one of the options below. If you prefer a fish sauce as dip, let us know.',
 				subOptions: [ 'A. Shrimp & Pork', 'B. Grilled Beef', 'C. Grilled Chicken', 'D. Vegetables' ]
 			},
-			{ code: 'A6', name: 'Marianted Minced Pork', price: 595 },
+			{ code: 'A6', name: 'Marinated Minced Pork', price: 595 },
 			{ code: 'A8', name: 'Golden Shrimp', price: 995 },
 			{
 				code: 'A9A',
@@ -74,7 +74,7 @@ const data = [
 			{ code: 'P6', name: 'Beef ball', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
 			{ code: 'P7', name: 'Chicken', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
 			{ code: 'P8', name: 'Vegetables', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
-			{ code: 'P9', name: 'Vegetables', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
+			{ code: 'P9', name: 'Assorted Beef, tripe and tendon', subOptions: [ 'M: 9.95', 'L: 10.95', 'XL: 11.95' ] },
 			{
 				code: 'P10',
 				name: 'House Special',
@@ -106,9 +106,9 @@ const data = [
 			{ code: 'R4', name: 'Rice with grilled lemongrass chicken & porkchop', price: 1395 },
 			{ code: 'R5', name: 'Stir fry chicken with satay', price: 1195 },
 			{ code: 'R6', name: 'Stir fry beef with satay', price: 1195 },
-			{ code: 'R6', name: 'Stir fry chicken with cashews', price: 1195 },
-			{ code: 'R6', name: 'Stir fry shrimp with cashews', price: 1495 },
-			{ code: 'R6', name: 'Combination Stir fry (shrimp, beef, chicken, pork)', price: 1495 }
+			{ code: 'R7', name: 'Stir fry chicken with cashews', price: 1195 },
+			{ code: 'R8', name: 'Stir fry shrimp with cashews', price: 1495 },
+			{ code: 'R9', name: 'Combination Stir fry (shrimp, beef, chicken, pork)', price: 1495 }
 		]
 	},
 	{
@@ -135,11 +135,11 @@ const data = [
 			{ code: 'V2A', name: 'Vermicelli with spring roll and grilled pork', price: 1195 },
 			{ code: 'V2B', name: 'Vermicelli with spring roll and grilled beef', price: 1195 },
 			{ code: 'V2C', name: 'Vermicelli with spring roll and grilled chicken', price: 1195 },
-			{ code: 'V3A', name: 'Vermicelli with spring roll, marianated minced pork and grilled pork', price: 1295 },
-			{ code: 'V3B', name: 'Vermicelli with spring roll, marianated minced pork and grilled beef', price: 1295 },
+			{ code: 'V3A', name: 'Vermicelli with spring roll, marinated minced pork and grilled pork', price: 1295 },
+			{ code: 'V3B', name: 'Vermicelli with spring roll, marinated minced pork and grilled beef', price: 1295 },
 			{
 				code: 'V3C',
-				name: 'Vermicelli with spring roll, marianated minced pork and grilled chicken',
+				name: 'Vermicelli with spring roll, marinated minced pork and grilled chicken',
 				price: 1295
 			},
 			{ code: 'V4A', name: 'Vermicelli with spring roll and satay chicken', price: 1295 },
@@ -154,7 +154,7 @@ const data = [
 			{ code: 'C2', name: 'Pork congee', price: 895 },
 			{ code: 'C3', name: 'Shrimp congee', price: 1095 },
 			{ code: 'C4', name: 'Assorted (pork, beef, shrimp, chicken) congee', price: 1095 },
-			{ code: 'C5', name: 'Seafood (imitation crab, fish balls, scallop, mussell, shrimp) congee', price: 1095 }
+			{ code: 'C5', name: 'Seafood (imitation crab, fish balls, scallop, mussel, shrimp) congee', price: 1095 }
 		]
 	},
 	{
