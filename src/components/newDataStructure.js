@@ -1,6 +1,0 @@
-const data = [
-  {
-    header: 'Appetizers',
-    
-  }
-]
