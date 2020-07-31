@@ -12,7 +12,7 @@ import { uuid } from 'uuidv4';
 const MenuContent = styled.section.attrs({
 	id: 'content'
 })`
-	margin: 0em 1em 0 13em;
+	margin: 0em 1em 0 14em;
 `;
 
 const MenuPage = (props) => {
