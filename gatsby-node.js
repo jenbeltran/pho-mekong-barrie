@@ -24,4 +24,6 @@ exports.createPages = ({ actions: { createPage } }) => {
       context: { category }
     });
   });
+
+  //create a page for popular items
 };
