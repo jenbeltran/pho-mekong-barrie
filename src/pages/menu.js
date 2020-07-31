@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SEO from '../components/seo';
 import NavDesktop from '../components/NavDesktop/NavDesktop.js';
 import NavMobile from '../components/NavMobile/NavMobile.js';
@@ -6,8 +6,6 @@ import MenuSection from '../components/MenuSection/MenuSection.js';
 import Banner from '../components/Banner/Banner.js';
 import styled from 'styled-components';
 import { uuid } from 'uuidv4';
-
-// TODO: use useRef instead of useState (also present in fullMenu page)
 
 const MenuContent = styled.section.attrs({
 	id: 'content'
@@ -17,19 +15,19 @@ const MenuContent = styled.section.attrs({
 
 const MenuPage = (props) => {
 
-	const passedPageContent = [{...props.pageContext.category}];
-	const [ activeItem, setActiveItem ] = useState(props.pageContext.category.header);
-
-	const MenuItems = passedPageContent.map((section) => <MenuSection key={uuid()} activeItem={activeItem} section={section} />);
+	const { header } = props.pageContext.category;
 
 	return (
 		<section>
-			<SEO title="Home" />
+			<SEO title={header} />
 			<NavMobile/>
-			<NavDesktop activeItem={activeItem} setActiveItem={setActiveItem} />
-				<Banner activeItem={passedPageContent[0].header}/>
-				<MenuContent>{MenuItems}</MenuContent>
+			<NavDesktop activeItem={header} />
+				<Banner activeItem={header}/>
+				<MenuContent>
+					<MenuSection key={uuid()} section={props.pageContext.category}/>
+				</MenuContent>
 		</section>
 	);
 };
+
 export default MenuPage;

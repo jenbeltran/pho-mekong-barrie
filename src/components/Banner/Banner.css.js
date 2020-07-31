@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import PhoBanner from '../../images/test-banner-pho.jpeg'; // default banner
+import defaultBanner from '../../images/test-banner-pho.jpeg';
 
 const BannerImg = styled.img.attrs(props => ({
-  src: props.currentImg || PhoBanner,
-  alt: 'banner',
+  src: props.currentImg || defaultBanner,
   id: 'banner-img'
 }))`
   object-fit: cover;
