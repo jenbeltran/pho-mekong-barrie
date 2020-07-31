@@ -6,7 +6,7 @@ import BannerData from '../Banner/data';
 const Banner = ({activeItem}) => {
 
   return(
-    <section id="banner-title" style={{minHeight: '16em'}}>
+    <section id="banner-title" >
       <BannerImg alt={`${activeItem} Banner`} currentImg={BannerData[activeItem].img}/>
       <BannerSection>
         <BannerHeader>{activeItem}</BannerHeader>
