@@ -75,6 +75,10 @@ const NavData = [
     name: "Contact Us",
     uri: "",
   }
+  // {
+  //   name: 'Sides/Extras',
+  //   uri: 'extras'
+  // }
 ];
 
 export default NavData;
