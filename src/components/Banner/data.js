@@ -1,4 +1,4 @@
-import { Pho, Appetizer, Congee, PadThai, Beverages, Curry, Salad, FriedRice, SmallSoup, SteamedRice, StirFry, Vermicelli, Signature, NoodleSoup2, BunBoHue, TomYumNoodle } from '../../images/images.js';
+import { Pho, Appetizer, Congee, PadThai, Beverages, Curry, Salad, FriedRice, SmallSoup, SteamedRice, StirFry, Vermicelli, Signature, NoodleSoup2, BunBoHue, TomYumNoodle } from '../../images/index.js';
 
 const BannerData = {
   'Full Menu': {
