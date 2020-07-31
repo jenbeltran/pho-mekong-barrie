@@ -1,4 +1,5 @@
-const allMenuData = require('./src/components/data.js');
+const allMenuData = require('./src/data/menuData.js');
+// const bannerData = require('./src/data/bannerData.js')
 
 exports.createPages = ({ actions: { createPage } }) => {
   // // creates one page for the Home /contact Us route
