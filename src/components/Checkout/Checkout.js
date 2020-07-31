@@ -8,7 +8,7 @@ const redirectToCheckout = async (event) => {
 	event.preventDefault();
 	const stripe = await stripePromise;
 	const { error } = await stripe.redirectToCheckout({
-		lineItems  : [ { price: `${process.env.A1}`, quantity: 1 }, { price: `${process.env.A2}`, quantity: 3 } ],
+		lineItems  : [ { price: `${process.env.P1}`, quantity: 1 }, { price: `${process.env.A5}`, quantity: 3 } ],
 		mode       : 'payment',
 		successUrl : `http://localhost:8000/successCheckout`,
 		cancelUrl  : `http://localhost:8000/viewCart`
