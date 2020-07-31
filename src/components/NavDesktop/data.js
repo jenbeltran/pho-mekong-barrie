@@ -4,10 +4,6 @@ const NavData = [
     uri: "",
   },
   {
-    name: "Popular Items",
-    uri: "popular-items",
-  },
-  {
     name: "Full Menu",
     uri: "full-menu",
   },
@@ -22,6 +18,10 @@ const NavData = [
   {
     name: "Vermicelli",
     uri: "vermicelli",
+  },
+  {
+    name: "Tom Yom Noodle Soups",
+    uri: 'tom-yum-noodle-soups'
   },
   {
     name: "Appetizers",
