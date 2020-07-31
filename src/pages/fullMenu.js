@@ -26,6 +26,7 @@ const FullMenu = (props) => {
       <NavMobile/>
 			<NavDesktop activeItem={header} />
 				<Banner activeItem={header}/>
+				<CartHeader />
 				<MenuContent>{MenuItems}</MenuContent>
 		</section>
 	);

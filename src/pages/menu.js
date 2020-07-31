@@ -24,6 +24,7 @@ const MenuPage = (props) => {
 			<NavMobile/>
 			<NavDesktop activeItem={header} />
 				<Banner activeItem={header}/>
+				<CartHeader />
 				<MenuContent>
 					<MenuSection key={uuid()} section={props.pageContext.category}/>
 				</MenuContent>
