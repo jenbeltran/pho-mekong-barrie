@@ -7,9 +7,9 @@ import Checkout from '../components/Checkout/Checkout';
 const ViewCart = (props) => {
 	return (
 		<section>
-			<SEO title="Home" />
+			<SEO title="View Cart" />
 			<NavDesktop />
-			<Banner activeItem="Full Menu" />
+			<Banner activeItem="View Cart" />
 			<Checkout />
 		</section>
 	);
