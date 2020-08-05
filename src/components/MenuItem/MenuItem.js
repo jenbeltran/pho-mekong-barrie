@@ -20,7 +20,7 @@ const MenuItem = ({ item, header }) => {
 				<section className="item-name-and-code" style={{paddingRight: '1em', maxWidth: '60%'}}>
 					{code}. {name}
 				</section>
-				{header !== 'Pho' && <section className="price" style={{alignSelf: 'center'}}>{(price / 100).toFixed(2)}<button>-</button><label for="quantity"><input min='0'></input></label><button>+</button></section>}
+				{header !== 'Pho' && <section className="price" style={{alignSelf: 'center'}}>{(price / 100).toFixed(2)}<button>-</button><label id={code} for="quantity"><input name={name} id={code} min='0'></input></label><button>+</button></section>}
 				{header === 'Pho' &&
 				subOptions && (
 					<PhoSizeOptions>
