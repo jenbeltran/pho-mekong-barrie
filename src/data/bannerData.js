@@ -73,6 +73,10 @@ const BannerData = {
     title: 'Contact Us',
     img: ''
   },
+  'View Cart': {
+    title: 'View Cart',
+    img: ''
+  }
 };
 
 export { BannerData }; 
