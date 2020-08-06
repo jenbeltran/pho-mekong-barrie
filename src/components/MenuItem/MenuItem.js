@@ -7,11 +7,17 @@ import {
   ItemDetails,
 } from "./MenuItem.css"
 import { uuid } from "uuidv4"
+import { useImperativeHandle } from "react"
 
 // TOD0: Refactor
 const MenuItem = ({ item, header }) => {
 
 	const [quantity, setQuantity] = useState(0)
+	// const inputValue = useRef(0)
+
+	const handleQuantity = () => {
+		console.log('Here')
+	}
 
   const { code, name, price, desc, subOptions } = item
 
@@ -36,11 +42,11 @@ const MenuItem = ({ item, header }) => {
             {(price / 100).toFixed(2)}
 					<section className="quantity">
 						<label htmlFor="quantity">
-							<button>
+							<button onClick={() => setQuantity(quantity - 1)}>
 								-
 							</button>
-							<input type="number" min="0" placeholder="0" id="quantity" name="quantity"></input>
-							<button>
+							<input value={quantity} type="number" min="0" placeholder="0" id="quantity" name="quantity"></input>
+							<button onClick={() => setQuantity(quantity + 1)}>
 								+
 							</button>
 						</label>
