@@ -1,5 +1,4 @@
 import React from "react"
-import { Icon } from 'semantic-ui-react'
 import { ListGroupItem } from "reactstrap"
 import {
   PhoSizeOptions,
@@ -30,14 +29,19 @@ const MenuItem = ({ item, header }) => {
           {code}. {name}
         </section>
         {header !== "Pho" && (
-          <section className="price" style={{ alignSelf: "center" }}>
+          <section className="price" style={{ alignSelf: "center", display: 'flex' }}>
             {(price / 100).toFixed(2)}
-            <label id={code} for="quantity">
-						
-							<Icon as={Icon} name='cart plus icon' bordered inverted color="teal" size='large' />
-
-				
-            </label>
+					<section className="quantity">
+						<label htmlFor="quantity">
+							<button>
+								-
+							</button>
+							<input type="number" min="0" placeholder="0" id="quantity" name="quantity"></input>
+							<button>
+								+
+							</button>
+						</label>
+					</section>
           </section>
         )}
         {header === "Pho" && subOptions && (

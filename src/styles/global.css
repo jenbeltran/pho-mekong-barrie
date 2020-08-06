@@ -49,3 +49,13 @@ html {
     margin: 0em 1em 0em 18em;
   }
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input#quantity {
+  width: 3em;
+}
