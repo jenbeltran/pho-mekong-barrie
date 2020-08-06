@@ -56,6 +56,15 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
+label[for=quantity] {
+  margin: inherit;
+}
+
+input[type=number] {
+  text-align: center;
+}
+
 input#quantity {
   width: 3em;
 }
+
