@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useRef } from "react"
 import { ListGroupItem } from "reactstrap"
 import {
   PhoSizeOptions,
@@ -10,6 +10,9 @@ import { uuid } from "uuidv4"
 
 // TOD0: Refactor
 const MenuItem = ({ item, header }) => {
+
+	const [quantity, setQuantity] = useState(0)
+
   const { code, name, price, desc, subOptions } = item
 
   // Only A5 and Pho items have supoptions
