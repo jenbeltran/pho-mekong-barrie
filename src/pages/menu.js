@@ -19,6 +19,7 @@ const MenuPage = (props) => {
 	if(props.location.pathname === '/menu/') return (
 		<section>NO page exists</section>
 	)
+	
 	const { header } = props.pageContext.category;
 
 	return (

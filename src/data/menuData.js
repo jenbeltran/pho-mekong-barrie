@@ -79,9 +79,9 @@ const data = [
 				code: 'P10',
 				name: 'House Special',
 				desc: '(Assorted beef, with vegetables and shrimp)',
-				subOptions: [ 'M: 11.95', 'L: 12.95', 'XL: 12.95' ]
+				subOptions: [ 'M: 11.95', 'L: 12.95', 'XL: 13.95' ]
 			},
-			{ code: 'P11', name: 'Shrimp', subOptions: [ 'M: 11.95', 'L: 12.95', 'XL: 12.95' ] }
+			{ code: 'P11', name: 'Shrimp', subOptions: [ 'M: 11.95', 'L: 12.95', 'XL: 13.95' ] }
 		]
 	},
 	{
@@ -194,7 +194,7 @@ const data = [
 			{ code: 'M6', name: 'Shrimp Stir-fry', price: 1445 },
 			{ code: 'M7', name: 'Shrimp satay Stir-fry', price: 1445 },
 			{ code: 'M8', name: 'Seafood Stir-fry', price: 1445 },
-			{ code: 'M8', name: 'Combination (shrimp, pork, beef) Stir-fry', price: 1445 }
+			{ code: 'M9', name: 'Combination (shrimp, pork, beef) Stir-fry', price: 1445 }
 		]
 	},
 	{
