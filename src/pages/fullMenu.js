@@ -6,7 +6,9 @@ import MenuSection from '../components/MenuSection/MenuSection.js';
 import Banner from '../components/Banner/Banner.js';
 import CartHeader from '../components/CartHeader/CartHeader';
 import styled from 'styled-components';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
+import allMenuData from '../data/menuData.js';
+import BannerData from '../components/Banner/data';
 
 const MenuContent = styled.section.attrs({
 	id: 'content'
@@ -15,17 +17,18 @@ const MenuContent = styled.section.attrs({
 `;
 
 const FullMenu = (props) => {
-	const { list, header } = props.pageContext;
 	
+	const { list, header } = props.pageContext;
 	// receives an array of all the sections of the menu to render
-	const MenuItems = list.map((section) => <MenuSection fullMenu key={uuid()} section={section} />);
+
+	const MenuItems = allMenuData.map((section) => <MenuSection fullMenu key={uuidv4()} section={section} />);
 
 	return (
 		<section>
 			<SEO title={header} />
       <NavMobile/>
 			<NavDesktop activeItem={header} />
-				<Banner activeItem={header}/>
+			<Banner activeItem="Full Menu" />
 				{/* <CartHeader /> */}
 				<MenuContent>{MenuItems}</MenuContent>
 		</section>
