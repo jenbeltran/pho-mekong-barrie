@@ -1,11 +1,11 @@
 const allMenuData = require('./src/data/menuData.js');
 
 exports.createPages = ({ actions: { createPage } }) => {
-	// // creates one page for the Home /contact Us route
+  // creates one page for the Home /contact Us route
 	createPage({
 		path      : `/`,
 		component : require.resolve('./src/pages/index.js'),
-		context   : { allMenuData }
+		// context   : { allMenuData }
 	});
 
   // page for the full menu
@@ -15,7 +15,7 @@ exports.createPages = ({ actions: { createPage } }) => {
     context: { header: 'Full Menu', uri: 'full-menu', list: allMenuData },
   });
 
-    // Different menu pages
+  // Different menu pages
   allMenuData.forEach(category => {
     createPage({
       path:`/${category.uri}/`,
@@ -23,6 +23,4 @@ exports.createPages = ({ actions: { createPage } }) => {
       context: { category }
     });
   });
-
-  //create a page for popular items
 };
