@@ -79,9 +79,9 @@ const data = [
 				code: 'P10',
 				name: 'House Special',
 				desc: '(Assorted beef, with vegetables and shrimp)',
-				subOptions: [ 'M: 10.95', 'L: 12.95', 'XL: 12.95' ]
+				subOptions: [ 'M: 11.95', 'L: 12.95', 'XL: 12.95' ]
 			},
-			{ code: 'P11', name: 'Shrimp', subOptions: [ 'M: 10.95', 'L: 12.95', 'XL: 12.95' ] }
+			{ code: 'P11', name: 'Shrimp', subOptions: [ 'M: 11.95', 'L: 12.95', 'XL: 12.95' ] }
 		]
 	},
 	{
