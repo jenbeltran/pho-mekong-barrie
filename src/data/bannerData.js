@@ -5,10 +5,6 @@ const BannerData = {
     title: 'Full Menu',
     img: ''
   },
-  'Popular Items': {
-    title: 'Popular Items',
-    img: ''
-  },
   'Pho': {
     title: 'Pho',
     img: Pho
