@@ -1,8 +1,7 @@
 import React from 'react';
 import { ListGroupItem } from 'reactstrap';
 import { PhoSizeOptions, SubOptions, ItemMain, ItemDetails } from './MenuItem.css'
-import { uuid } from 'uuidv4';
-
+import { v4 as uuidv4 } from 'uuid';
 // TOD0: Refactor
 const MenuItem = ({ item, header }) => {
 	const { code, name, price, desc, subOptions } = item;
@@ -10,7 +9,7 @@ const MenuItem = ({ item, header }) => {
 	// Only A5 and Pho items have supoptions
 	const getAllSubOptions = (allOptions) => {
 		return allOptions.map((option) => {
-			return <li key={uuid()}>{option}</li>;
+			return <li key={uuidv4()}>{option}</li>;
 		});
 	};
 
