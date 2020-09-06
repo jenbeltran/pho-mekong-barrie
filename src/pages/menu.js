@@ -6,7 +6,8 @@ import MenuSection from '../components/MenuSection/MenuSection.js';
 import Banner from '../components/Banner/Banner.js';
 import CartHeader from '../components/CartHeader/CartHeader';
 import styled from 'styled-components';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const MenuContent = styled.section.attrs({
 	id: 'content'
@@ -15,7 +16,9 @@ const MenuContent = styled.section.attrs({
 `;
 
 const MenuPage = (props) => {
-
+	if(props.location.pathname === '/menu/') return (
+		<section>NO page exists</section>
+	)
 	const { header } = props.pageContext.category;
 
 	return (
@@ -26,7 +29,7 @@ const MenuPage = (props) => {
 				<Banner activeItem={header}/>
 				{/* <CartHeader /> */}
 				<MenuContent>
-					<MenuSection key={uuid()} section={props.pageContext.category}/>
+					<MenuSection key={uuidv4()} section={props.pageContext.category}/>
 				</MenuContent>
 		</section>
 	);
