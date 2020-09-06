@@ -222,8 +222,8 @@ const data = [
 			{ code: 'S6B', name: 'Spicy satay stir-fry beef with steamed rice', price: 1395 },
 			{ code: 'S7A', name: 'Stir fry ginger chicken with steamed rice', price: 1395 },
 			{ code: 'S7B', name: 'Stir fry ginger beef with steamed rice', price: 1395 },
-			{ code: 'S8A', name: 'Stir fry ginger shrimp with steamed rice', price: 1395 },
-			{ code: 'S8B', name: 'Spicy satsy stir fry ginger shrimp with steamed rice', price: 1395 }
+			{ code: 'S8A', name: 'Stir fry ginger shrimp with steamed rice', price: 1595 },
+			{ code: 'S8B', name: 'Spicy satay stir fry shrimp with steamed rice', price: 1595 }
 		]
 	},
 	{
