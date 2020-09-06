@@ -5,12 +5,12 @@ import NavMobile from '../components/NavMobile/NavMobile.js';
 import Landing from '../components/LandingPage/Landing';
 
 const IndexPage = () => {
+	
 	return (
 		<div>
 			<SEO title="Home" />
 			<NavMobile />
-			<NavDesktop />
-			<NavMobile />
+			<NavDesktop activeItem="Pho Mekong"/>
 			<Landing />
 		</div>
 	);
