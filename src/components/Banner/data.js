@@ -5,10 +5,6 @@ const BannerData = {
     title: 'Full Menu',
     img: ''
   },
-  'Popular Items': {
-    title: 'Popular Items',
-    img: ''
-  },
   'Pho': {
     title: 'Pho',
     img: Pho
@@ -72,7 +68,7 @@ const BannerData = {
   'Contact Us': {
     title: 'Contact Us',
     img: ''
-  },
+  }
 };
 
 export default BannerData;
