@@ -232,7 +232,7 @@ const data = [
 		list: [
 			{code: 'B4', name: 'Vietnamese Iced Coffee', price: 495},
 			{code: 'B9', name: 'Milkshake', desc: 'Contains sugar, ice and milk', price: 495, subOptions: ['A. Avocado', 'M. Mango', 'S. Strawberry']},
-			{code: 'B10', name: 'Bubble tea slushie', desc: 'These come with tapioca, and blended with ice, milk and sugar', price: 495}
+			{code: 'B10', name: 'Bubble tea slushie', desc: 'These come with tapioca, and blended with ice, milk and sugar.', price: 495}
 		]
 	}
 ];
