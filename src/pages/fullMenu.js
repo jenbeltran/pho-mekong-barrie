@@ -18,7 +18,7 @@ const MenuContent = styled.section.attrs({
 
 const FullMenu = (props) => {
 	
-	const { list, header } = props.pageContext;
+	const { header } = props.pageContext;
 	// receives an array of all the sections of the menu to render
 
 	const MenuItems = allMenuData.map((section) => <MenuSection fullMenu key={uuidv4()} section={section} />);
